@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="100 320 824 190" role="img" aria-labelledby="title">
+  <title id="title">Wiggle symbol</title>
+  <defs>
+    <clipPath id="sun-clip">
+      <path d="M124 473.3c74.9 0 102.2-128.5 171.8-128.5 73.7 0 99.2 141 216.2 141s142.5-141 216.2-141c69.6 0 96.9 128.5 171.8 128.5V250H124Z"/>
+    </clipPath>
+  </defs>
+  <circle cx="512" cy="462" r="74" fill="#F5A623" clip-path="url(#sun-clip)"/>
+  <path d="M124 473.3c74.9 0 102.2-128.5 171.8-128.5 73.7 0 99.2 141 216.2 141s142.5-141 216.2-141c69.6 0 96.9 128.5 171.8 128.5" fill="none" stroke="#102D75" stroke-linecap="round" stroke-width="23"/>
+</svg>
