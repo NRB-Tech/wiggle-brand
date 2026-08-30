@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Small-size variant of wiggle-symbol-v2.svg: the viewBox is cropped to the
+<!-- Small-size variant of wiggle-symbol.svg: the viewBox is cropped to the
      symbol and the stroke and sun are enlarged so the mark stays legible at
-     16 px. Keep the master geometry in wiggle-symbol-v2.svg unchanged. -->
+     16 px. Keep the master geometry in wiggle-symbol.svg unchanged. -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="114 112 796 796" role="img" aria-labelledby="title">
   <title id="title">Wiggle symbol</title>
   <defs>

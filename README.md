@@ -14,8 +14,8 @@ the Wiggle site repository.
 
 | Asset | Where it appears |
 | --- | --- |
-| `wiggle-v2-stacked.svg` | Header and footer in `../index.html`; header and footer in `../help/index.html`, `../help/ev-solar-battery-too-much-to-manage.html`, `../help/intelligent-octopus-go-ev-charging.html`, and `../help/solar-battery-not-saving-money.html`; header and footer in `../insights/index.html` and `../insights/solar-eclipse-home-energy-flexibility.html`; page header in `../privacy.html`, `../terms.html`, `../thanks.html`, and `../thanks-help.html`. |
-| `favicon.svg` | SVG browser icon linked from every HTML page above. It contains its own small-size copy of the symbol geometry on white: the viewBox is cropped to the symbol and the stroke and sun are enlarged so the mark survives a 16 px browser tab. Do not sync it back to `wiggle-symbol-v2.svg`. |
+| `wiggle-stacked.svg` | Header and footer in `../index.html`; header and footer in `../help/index.html`, `../help/ev-solar-battery-too-much-to-manage.html`, `../help/intelligent-octopus-go-ev-charging.html`, and `../help/solar-battery-not-saving-money.html`; header and footer in `../insights/index.html` and `../insights/solar-eclipse-home-energy-flexibility.html`; page header in `../privacy.html`, `../terms.html`, `../thanks.html`, and `../thanks-help.html`. |
+| `favicon.svg` | SVG browser icon linked from every HTML page above. It contains its own small-size copy of the symbol geometry on white: the viewBox is cropped to the symbol and the stroke and sun are enlarged so the mark survives a 16 px browser tab. Do not sync it back to `wiggle-symbol.svg`. |
 | `favicon.ico` | ICO fallback linked from every HTML page above. Generated from `favicon.svg`. |
 | `favicon-32.png` | Standalone 32 px favicon derivative. It is not currently linked directly. |
 | `apple-touch-icon.png` | Apple touch icon linked from every HTML page above. Generated from `favicon.svg`. |
@@ -33,22 +33,26 @@ language but contains no logo or text.
 
 ## Brand and distribution assets
 
-- `wiggle-symbol-v2.svg` and `wiggle-symbol-v2-dark.svg` are the current symbol
+- `wiggle-symbol.svg` and `wiggle-symbol-dark.svg` are the current symbol
   masters.
-- `wiggle-symbol-v2.png` is the 1024 px transparent raster export of the light
-  v2 symbol for uses that cannot accept SVG.
-- `wiggle-v2-horizontal.svg` and `wiggle-v2-horizontal-dark.svg` are the current
+- `wiggle-symbol.png` is the 1024 px transparent raster export of the current
+  light symbol for uses that cannot accept SVG.
+- `wiggle-horizontal.svg` and `wiggle-horizontal-dark.svg` are the current
   side-by-side lockups. Their symbol is intentionally smaller than the wordmark;
   these supply the landscape social previews rather than the website chrome.
-- `wiggle-v2-stacked.svg` and `wiggle-v2-stacked-dark.svg` are the current
+- `wiggle-stacked.svg` and `wiggle-stacked-dark.svg` are the current
   stacked lockups. Their symbol is slightly reduced relative to the wordmark so
   the two elements have comparable visual weight.
 - `social-square.png` contains the current stacked lockup but is not referenced
   by the website.
 - `linkedin-banner.svg` and `linkedin-banner.png` are not referenced by the
   website, but use the Wiggle wave-and-sun motif.
-- `wiggle-symbol-v1.svg` and `wiggle.svg` are retained legacy artwork and are
-  not referenced by the live HTML.
+- `legacy/v1/` contains the former symbol and full lockup. Legacy artwork is
+  retained for provenance and is not referenced by the live HTML.
+
+Current assets always use stable, versionless filenames. When a new design is
+approved, move the superseded set into the appropriate `legacy/vN/` directory
+before replacing the root-level masters and derivatives.
 
 ## Trade mark
 
@@ -68,7 +72,7 @@ mark and the legal copy when replacing a logo asset.
 The current files were rendered with `rsvg-convert` and ImageMagick:
 
 ```sh
-rsvg-convert --width 1024 --height 1024 --output wiggle-symbol-v2.png wiggle-symbol-v2.svg
+rsvg-convert --width 1024 --height 1024 --output wiggle-symbol.png wiggle-symbol.svg
 
 rsvg-convert --width 32 --height 32 --output favicon-32.png favicon.svg
 rsvg-convert --width 180 --height 180 --output apple-touch-icon.png favicon.svg
@@ -81,11 +85,11 @@ rsvg-convert --width 32 --height 32 --background-color white --output /tmp/favic
 rsvg-convert --width 48 --height 48 --background-color white --output /tmp/favicon-48.png favicon.svg
 magick /tmp/favicon-16.png /tmp/favicon-32.png /tmp/favicon-48.png -background white -alpha remove favicon.ico
 
-rsvg-convert --width 820 --output /tmp/wiggle-v2-horizontal-social.png wiggle-v2-horizontal.svg
-rsvg-convert --width 700 --output /tmp/wiggle-v2-stacked-social.png wiggle-v2-stacked.svg
-magick -size 1200x630 xc:white /tmp/wiggle-v2-horizontal-social.png -gravity center -composite -depth 8 og-image.png
-magick -size 1200x600 xc:white /tmp/wiggle-v2-horizontal-social.png -gravity center -composite -depth 8 twitter-image.png
-magick -size 1200x1200 xc:white /tmp/wiggle-v2-stacked-social.png -gravity center -composite -depth 8 social-square.png
+rsvg-convert --width 820 --output /tmp/wiggle-horizontal-social.png wiggle-horizontal.svg
+rsvg-convert --width 700 --output /tmp/wiggle-stacked-social.png wiggle-stacked.svg
+magick -size 1200x630 xc:white /tmp/wiggle-horizontal-social.png -gravity center -composite -depth 8 og-image.png
+magick -size 1200x600 xc:white /tmp/wiggle-horizontal-social.png -gravity center -composite -depth 8 twitter-image.png
+magick -size 1200x1200 xc:white /tmp/wiggle-stacked-social.png -gravity center -composite -depth 8 social-square.png
 ```
 
 After an update, check the header and ™ alignment at desktop and mobile widths,

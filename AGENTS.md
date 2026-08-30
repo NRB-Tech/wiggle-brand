@@ -5,11 +5,13 @@ artwork. The website consumes this repository as the `brand/` Git submodule.
 
 ## Rules
 
-- `wiggle-symbol-v2.svg` is the current light-background symbol master;
-  `wiggle-symbol-v2-dark.svg` is its dark-background counterpart.
+- Current brand assets use stable, versionless filenames. Move superseded
+  artwork into the appropriate `legacy/vN/` directory before replacing it.
+- `wiggle-symbol.svg` is the current light-background symbol master;
+  `wiggle-symbol-dark.svg` is its dark-background counterpart.
 - Keep source SVGs editable and validate them with `xmllint --noout`.
-- `wiggle-symbol-v2.png` is a 1024 by 1024 transparent export generated from
-  the light v2 SVG with `rsvg-convert`; regenerate it after master geometry or
+- `wiggle-symbol.png` is a 1024 by 1024 transparent export generated from
+  the current light SVG with `rsvg-convert`; regenerate it after master geometry or
   colour changes.
 - `favicon.svg` is an intentionally adjusted small-size derivative. Do not
   replace its geometry mechanically from the symbol master.
