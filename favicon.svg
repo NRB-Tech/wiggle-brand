@@ -6,10 +6,10 @@
   <title id="title">Wiggle symbol</title>
   <defs>
     <clipPath id="sun-clip">
-      <path d="M154 700C240 700 260 320 375 320C490 320 475 700 585 700C675 700 710 550 765 550C820 550 845 700 870 700V220H154Z"/>
+      <path d="M154 700C210 610 270 320 370 320C470 320 500 700 585 700C655 700 675 550 730 550C785 550 830 630 870 700V220H154Z"/>
     </clipPath>
   </defs>
   <rect x="114" y="112" width="796" height="796" fill="#FFFFFF"/>
   <circle cx="554" cy="630" r="150" fill="#F5A623" clip-path="url(#sun-clip)"/>
-  <path d="M154 700C240 700 260 320 375 320C490 320 475 700 585 700C675 700 710 550 765 550C820 550 845 700 870 700" fill="none" stroke="#102D75" stroke-linecap="round" stroke-linejoin="round" stroke-width="80"/>
+  <path d="M154 700C210 610 270 320 370 320C470 320 500 700 585 700C655 700 675 550 730 550C785 550 830 630 870 700" fill="none" stroke="#102D75" stroke-linecap="round" stroke-linejoin="round" stroke-width="80"/>
 </svg>
