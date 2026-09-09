@@ -15,10 +15,10 @@ the Wiggle site repository.
 | Asset | Where it appears |
 | --- | --- |
 | `wiggle-stacked.svg` | Header and footer in `../index.html`; header and footer in `../help/index.html`, `../help/ev-solar-battery-too-much-to-manage.html`, `../help/intelligent-octopus-go-ev-charging.html`, and `../help/solar-battery-not-saving-money.html`; header and footer in `../insights/index.html` and `../insights/solar-eclipse-home-energy-flexibility.html`; page header in `../privacy.html`, `../terms.html`, `../thanks.html`, and `../thanks-help.html`. |
-| `favicon.svg` | SVG browser icon linked from every HTML page above. It contains its own small-size copy of the symbol geometry on white: the viewBox is cropped to the symbol and the stroke and sun are enlarged so the mark survives a 16 px browser tab. Do not sync it back to `wiggle-symbol.svg`. |
+| `favicon.svg` | SVG browser icon linked from every HTML page above. It matches the admin panel favicon: a transparent background, 32-unit stroke and tightly cropped viewBox. Keep this framing when regenerating browser derivatives. |
 | `favicon.ico` | ICO fallback linked from every HTML page above. Generated from `favicon.svg`. |
 | `favicon-32.png` | Standalone 32 px favicon derivative. It is not currently linked directly. |
-| `apple-touch-icon.png` | Apple touch icon linked from every HTML page above. Generated from `favicon.svg`. |
+| `apple-touch-icon.png` | Apple touch icon linked from every HTML page above. Retains the white-background artwork archived in `legacy/v2/favicon.svg`. |
 | `og-image.png` | Open Graph preview for `../index.html` and `../insights/index.html`. Contains the horizontal lockup. |
 | `twitter-image.png` | X/Twitter preview for `../index.html` and `../insights/index.html`. Contains the horizontal lockup. |
 | `hero-connected-home.png` | Homepage hero illustration in `../index.html`. The central controller tile contains the Wiggle symbol, so this raster also needs review when the symbol changes. |
@@ -50,6 +50,8 @@ language but contains no logo or text.
 - `legacy/v1/` contains the former symbol and full lockup. Legacy artwork is
   retained for provenance and is not referenced by the live HTML.
 
+`legacy/v2/` preserves the former white-background, heavier-stroke browser favicons.
+
 Current assets always use stable, versionless filenames. When a new design is
 approved, move the superseded set into the appropriate `legacy/vN/` directory
 before replacing the root-level masters and derivatives.
@@ -74,16 +76,18 @@ The current files were rendered with `rsvg-convert` and ImageMagick:
 ```sh
 rsvg-convert --width 1024 --height 1024 --output wiggle-symbol.png wiggle-symbol.svg
 
-rsvg-convert --width 32 --height 32 --output favicon-32.png favicon.svg
-rsvg-convert --width 180 --height 180 --output apple-touch-icon.png favicon.svg
+rsvg-convert --width 180 --height 180 --output apple-touch-icon.png legacy/v2/favicon.svg
 
 # Build the ICO from rsvg output, not from the SVG directly. ImageMagick's own
 # SVG renderer ignores the clip path and the stroke, which silently produced an
 # ICO containing nothing but the orange sun dot.
-rsvg-convert --width 16 --height 16 --background-color white --output /tmp/favicon-16.png favicon.svg
-rsvg-convert --width 32 --height 32 --background-color white --output /tmp/favicon-32.png favicon.svg
-rsvg-convert --width 48 --height 48 --background-color white --output /tmp/favicon-48.png favicon.svg
-magick /tmp/favicon-16.png /tmp/favicon-32.png /tmp/favicon-48.png -background white -alpha remove favicon.ico
+# Preserve the wide SVG proportions inside square, transparent browser icons.
+for size in 16 32 48; do
+  rsvg-convert --keep-aspect-ratio --width "$size" --height "$size" --output "/tmp/favicon-$size.png" favicon.svg
+  magick "/tmp/favicon-$size.png" -gravity center -background none -extent "${size}x${size}" "/tmp/favicon-$size.png"
+done
+cp /tmp/favicon-32.png favicon-32.png
+magick /tmp/favicon-16.png /tmp/favicon-32.png /tmp/favicon-48.png favicon.ico
 
 rsvg-convert --width 820 --output /tmp/wiggle-horizontal-social.png wiggle-horizontal.svg
 rsvg-convert --width 700 --output /tmp/wiggle-stacked-social.png wiggle-stacked.svg

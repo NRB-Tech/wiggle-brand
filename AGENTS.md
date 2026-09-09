@@ -13,8 +13,9 @@ artwork. The website consumes this repository as the `brand/` Git submodule.
 - `wiggle-symbol.png` is a 1024 by 1024 transparent export generated from
   the current light SVG with `rsvg-convert`; regenerate it after master geometry or
   colour changes.
-- `favicon.svg` is an intentionally adjusted small-size derivative. Do not
-  replace its geometry mechanically from the symbol master.
+- `favicon.svg` intentionally matches the admin panel: transparent background,
+  32-unit stroke and tightly cropped viewBox. Preserve this framing rather than
+  copying the square symbol master mechanically.
 - Do not add secrets, private business material or proprietary product code.
 - After each coherent brand change, commit this repository, then update and
   commit the pinned submodule revision in every affected consumer repository.
