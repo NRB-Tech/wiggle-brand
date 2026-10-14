@@ -15,6 +15,10 @@ artwork. The website consumes this repository as the `brand/` Git submodule.
   colour changes.
 - `wiggle-symbol-dark.png` is the same export of `wiggle-symbol-dark.svg`;
   regenerate it with `wiggle-symbol.png`.
+- `wiggle-symbol-tile.svg` is the light symbol on a white rounded tile, for
+  emails: Gmail darkens an email's page but never its images, so the tile keeps
+  the navy symbol readable. Keep its symbol identical to `wiggle-symbol.svg` and
+  regenerate `wiggle-symbol-tile.png` with the other symbol exports.
 - `favicon.svg` intentionally matches the admin panel: transparent background,
   32-unit stroke and tightly cropped viewBox. Preserve this framing rather than
   copying the square symbol master mechanically.

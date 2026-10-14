@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
+  <title id="title">Wiggle symbol on a white tile</title>
+  <rect width="1024" height="1024" rx="230" fill="#FFFFFF"/>
+  <defs>
+    <clipPath id="sun-clip">
+      <path d="M154 700C210 610 270 320 370 320C470 320 475 700 585 700C675 700 705 550 760 550C815 550 835 630 870 700V220H154Z"/>
+    </clipPath>
+  </defs>
+  <circle cx="554" cy="642" r="114" fill="#F5A623" clip-path="url(#sun-clip)"/>
+  <path d="M154 700C210 610 270 320 370 320C470 320 475 700 585 700C675 700 705 550 760 550C815 550 835 630 870 700" fill="none" stroke="#102D75" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
+</svg>
