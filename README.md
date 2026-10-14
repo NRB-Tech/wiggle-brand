@@ -37,6 +37,8 @@ language but contains no logo or text.
   masters.
 - `wiggle-symbol.png` is the 1024 px transparent raster export of the current
   light symbol for uses that cannot accept SVG.
+- `wiggle-symbol-dark.png` is the same export of the dark symbol, for
+  dark-background uses that cannot accept SVG, such as emails in dark mode.
 - `wiggle-horizontal.svg` and `wiggle-horizontal-dark.svg` are the current
   side-by-side lockups. Their symbol is intentionally smaller than the wordmark;
   these supply the landscape social previews rather than the website chrome.
@@ -75,6 +77,7 @@ The current files were rendered with `rsvg-convert` and ImageMagick:
 
 ```sh
 rsvg-convert --width 1024 --height 1024 --output wiggle-symbol.png wiggle-symbol.svg
+rsvg-convert --width 1024 --height 1024 --output wiggle-symbol-dark.png wiggle-symbol-dark.svg
 
 rsvg-convert --width 180 --height 180 --output apple-touch-icon.png legacy/v2/favicon.svg
 
