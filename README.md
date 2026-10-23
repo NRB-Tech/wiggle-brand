@@ -37,6 +37,10 @@ language but contains no logo or text.
   masters.
 - `wiggle-symbol.png` is the 1024 px transparent raster export of the current
   light symbol for uses that cannot accept SVG.
+- `wiggle-symbol-cropped.png` is the light symbol export trimmed to the
+  artwork, with a 4 px transparent margin (756 × 420 px). Use it where the
+  square export's empty space is unwanted, such as a logo at the top of a
+  Google Doc.
 - `wiggle-symbol-dark.png` is the same export of the dark symbol, for
   dark-background uses that cannot accept SVG, such as emails in dark mode.
 - `wiggle-symbol-tile.svg` and `wiggle-symbol-tile.png` are the light symbol on
@@ -83,6 +87,10 @@ The current files were rendered with `rsvg-convert` and ImageMagick:
 rsvg-convert --width 1024 --height 1024 --output wiggle-symbol.png wiggle-symbol.svg
 rsvg-convert --width 1024 --height 1024 --output wiggle-symbol-dark.png wiggle-symbol-dark.svg
 rsvg-convert --width 1024 --height 1024 --output wiggle-symbol-tile.png wiggle-symbol-tile.svg
+
+# Trim the square export to the artwork and keep a 4 px transparent margin.
+rsvg-convert --width 1024 --height 1024 --output /tmp/wiggle-symbol-1024.png wiggle-symbol.svg
+magick /tmp/wiggle-symbol-1024.png -trim +repage -bordercolor none -border 4 wiggle-symbol-cropped.png
 
 rsvg-convert --width 180 --height 180 --output apple-touch-icon.png legacy/v2/favicon.svg
 

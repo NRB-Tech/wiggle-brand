@@ -15,6 +15,9 @@ artwork. The website consumes this repository as the `brand/` Git submodule.
   colour changes.
 - `wiggle-symbol-dark.png` is the same export of `wiggle-symbol-dark.svg`;
   regenerate it with `wiggle-symbol.png`.
+- `wiggle-symbol-cropped.png` is the light export trimmed to the artwork with a
+  4 px transparent margin, for uses such as a Google Doc logo; regenerate it with
+  `wiggle-symbol.png` using the command in `README.md`.
 - `wiggle-symbol-tile.svg` is the light symbol on a white rounded tile, for
   emails: Gmail darkens an email's page but never its images, so the tile keeps
   the navy symbol readable. Keep its symbol identical to `wiggle-symbol.svg` and
