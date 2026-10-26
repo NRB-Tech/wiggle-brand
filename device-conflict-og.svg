@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#01204C"/>
+
+  <!-- night sky -->
+  <mask id="crescent">
+    <rect width="1200" height="630" fill="#000000"/>
+    <circle cx="864" cy="130" r="48" fill="#FFFFFF"/>
+    <circle cx="894" cy="108" r="42" fill="#000000"/>
+  </mask>
+  <rect width="1200" height="630" fill="#FFFFFF" mask="url(#crescent)"/>
+  <g fill="#FFFFFF">
+    <path d="M992,86 L995,95 L1004,98 L995,101 L992,110 L989,101 L980,98 L989,95 Z"/>
+    <path d="M650,139 L652,145 L658,147 L652,149 L650,155 L648,149 L642,147 L648,145 Z"/>
+    <path d="M725,195 L727,201 L733,203 L727,205 L725,211 L723,205 L717,203 L723,201 Z"/>
+    <path d="M1058,193 L1060,199 L1066,201 L1060,203 L1058,209 L1056,203 L1050,201 L1056,199 Z"/>
+    <circle cx="1124" cy="143" r="3"/>
+  </g>
+
+  <g fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- grid pylon -->
+    <path d="M455,79 L461,79 M454,80 L431,220 M462,80 L487,220"/>
+    <path d="M452,103 L466,103"/>
+    <path d="M420,119 L499,119 M420,119 L452,103 M499,119 L466,103 M420,119 L420,128 M499,119 L499,128"/>
+    <path d="M407,155 L510,155 M407,155 L445,137 M510,155 L473,137 M407,155 L407,165 M510,155 L510,165"/>
+    <path d="M448,119 L475,155 M469,119 L442,155 M442,155 L481,188 M475,155 L436,188 M436,188 L487,220 M481,188 L431,220"/>
+
+    <!-- wall and home battery -->
+    <path d="M82,158 L82,520 M50,520 L200,520"/>
+    <path d="M84,226 L98,226 M84,234 L98,234 M84,377 L98,377 M84,386 L98,386"/>
+    <path d="M142,178 L256,182 Q274,183 274,200 L274,420 Q274,438 256,438 L142,438 Q124,438 124,420 L124,198 Q124,178 142,178 Z"/>
+    <path d="M148,178 L116,182 Q98,185 98,203 L98,414 Q98,431 116,434 L148,438"/>
+    <g stroke-width="2.5">
+      <rect x="155" y="219" width="90" height="31" rx="5"/>
+      <rect x="155" y="253" width="90" height="31" rx="5"/>
+      <rect x="155" y="287" width="90" height="31" rx="5"/>
+      <rect x="155" y="321" width="90" height="31" rx="5"/>
+      <rect x="155" y="355" width="90" height="31" rx="5"/>
+      <rect x="155" y="389" width="90" height="26" rx="5"/>
+    </g>
+    <!-- outlet pipe -->
+    <path d="M185,437 L185,455 Q185,470 199,470 Q213,470 213,455 L213,437" stroke-width="3"/>
+
+    <!-- charger -->
+    <path d="M548,520 L548,346 Q548,323 580,323 Q612,323 612,346 L612,520"/>
+    <path d="M515,520 L640,520"/>
+
+    <!-- car -->
+    <path d="M760,501 L732,501 Q719,500 719,486 L719,440 Q720,420 735,406 L772,374 Q790,361 820,360 L900,355 Q950,354 975,362 L1000,378 Q1025,396 1045,404 L1100,414 Q1135,422 1143,440 L1147,470 Q1148,500 1130,501 L1110,501 A47,47 0 1,0 1018,501 L852,501 A47,47 0 1,0 760,501 Z"/>
+    <path d="M792,400 Q790,392 800,385 L818,372 Q826,368 845,367 L900,364 Q945,362 965,368 L1018,408 Q1022,414 1012,414 L900,410 L800,405 Q792,404 792,400 Z" stroke-width="3"/>
+    <path d="M900,364 L900,410" stroke-width="3"/>
+    <path d="M728,418 L750,420 L747,430 L730,428" stroke-width="3"/>
+    <path d="M1100,431 L1131,436 L1129,444 Q1114,444 1103,438 Z" stroke-width="3"/>
+    <circle cx="806" cy="490" r="29"/>
+    <circle cx="1064" cy="490" r="29"/>
+    <path d="M710,520 L1150,520"/>
+  </g>
+
+  <!-- cheap grid supply, unused -->
+  <path d="M460,232 L460,262 Q460,270 468,270 L572,270 Q580,270 580,278 L580,314" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="0.1 13" opacity="0.85"/>
+
+  <!-- the battery's last charge -->
+  <rect x="161" y="393" width="58" height="17" rx="3" fill="#FDB005"/>
+
+  <!-- battery energy flowing into the car -->
+  <g fill="none" stroke="#FDB005" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M201,440 L201,448 Q201,467 220,467 L548,467 Q572,467 576,440 L580,393"/>
+    <path d="M580,393 Q600,391 616,417 Q640,460 680,460 Q720,458 760,436"/>
+    <path d="M322,457 L334,467 L322,477 M454,457 L466,467 L454,477" stroke-width="5"/>
+  </g>
+  <circle cx="580" cy="393" r="6" fill="#FDB005"/>
+  <circle cx="580" cy="393" r="13" fill="none" stroke="#FFFFFF" stroke-width="3.5"/>
+  <circle cx="766" cy="434" r="5" fill="#FDB005"/>
+  <circle cx="766" cy="434" r="12" fill="none" stroke="#FFFFFF" stroke-width="3.5"/>
+</svg>

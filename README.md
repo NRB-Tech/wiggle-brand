@@ -31,6 +31,13 @@ symbol.
 turn-up-flexibility insight. It uses the navy, amber and white illustration
 language but contains no logo or text.
 
+`device-conflict-og.png` is the article-specific preview and figure for the
+device-conflict insight: at night, a home battery's last charge flows into an
+electric car while the grid supply stays unused. It is exported at 1200 by 630
+from its editable source, `device-conflict-og.svg`, with
+`rsvg-convert -w 1200 -h 630 device-conflict-og.svg -o device-conflict-og.png`.
+It contains no logo or text.
+
 ## Brand and distribution assets
 
 - `wiggle-symbol.svg` and `wiggle-symbol-dark.svg` are the current symbol
