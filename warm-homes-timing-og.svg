@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#01204C"/>
+  <g transform="translate(0,18)">
+
+  <g fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- ground -->
+    <path d="M62,478 L730,478"/>
+
+    <!-- house: roof, chimney, walls, door -->
+    <path d="M62,296 L180,183 L330,183 L410,296 Z"/>
+    <path d="M345,204 L345,160 L372,160 L372,243"/>
+    <path d="M92,296 L92,478 M380,296 L380,478"/>
+    <path d="M232,478 L232,362 L292,362 L292,478"/>
+
+    <!-- solar panels on the roof -->
+    <g stroke-width="3">
+      <path d="M112,272 L252,272 L325,202 L185,202 Z"/>
+      <path d="M148.5,237 L288.5,237"/>
+      <path d="M147,272 L220,202 M182,272 L255,202 M217,272 L290,202"/>
+    </g>
+
+    <!-- home battery -->
+    <path d="M436,296 L508,296 Q522,296 522,310 L522,456 Q522,470 508,470 L436,470 Q422,470 422,456 L422,310 Q422,296 436,296 Z"/>
+    <path d="M436,296 L426,298 Q412,301 412,315 L412,451 Q412,465 426,468 L436,470"/>
+    <path d="M440,470 L440,478 M504,470 L504,478"/>
+    <g stroke-width="2.5">
+      <rect x="440" y="318" width="64" height="26" rx="5"/>
+      <rect x="440" y="353" width="64" height="26" rx="5"/>
+    </g>
+
+    <!-- heat pump -->
+    <rect x="560" y="376" width="152" height="90" rx="10"/>
+    <circle cx="607" cy="421" r="30"/>
+    <circle cx="607" cy="421" r="5" stroke-width="3"/>
+    <path d="M607,416 Q596,405 605,394 M612,421 Q623,410 634,419 M607,426 Q618,437 609,448 M602,421 Q591,432 580,423" stroke-width="3"/>
+    <path d="M652,405 L692,405 M652,421 L692,421 M652,437 L692,437"/>
+    <path d="M576,466 L576,478 M696,466 L696,478"/>
+
+    <!-- 24-hour clock: midnight at the top -->
+    <circle cx="960" cy="300" r="150"/>
+    <path d="M960,160 L960,176 M1100,300 L1084,300 M960,440 L960,424 M820,300 L836,300"/>
+    <path d="M960,300 L1016.6,243.4" stroke-width="6"/>
+    <path d="M960,300 L864.7,245" stroke-width="4.5"/>
+    <circle cx="960" cy="300" r="9"/>
+
+    <!-- evening peak, 16:00 to 19:00 -->
+    <path d="M805.9,389 A178,178 0 0 1 788.1,253.9" stroke-width="20" stroke-linecap="butt" stroke-dasharray="3.5 5.5"/>
+  </g>
+
+  <g fill="#FDB005">
+    <!-- lit window -->
+    <rect x="128" y="330" width="27" height="27" rx="2"/>
+    <rect x="161" y="330" width="27" height="27" rx="2"/>
+    <rect x="128" y="363" width="27" height="27" rx="2"/>
+    <rect x="161" y="363" width="27" height="27" rx="2"/>
+    <!-- stored charge -->
+    <rect x="440" y="388" width="64" height="26" rx="5"/>
+    <rect x="440" y="423" width="64" height="26" rx="5"/>
+  </g>
+
+  <g fill="none" stroke="#FDB005" stroke-linecap="round">
+    <!-- cheap overnight hours, 23:00 to 07:00 -->
+    <path d="M913.9,128.1 A178,178 0 0 1 1131.9,346.1" stroke-width="16"/>
+    <!-- battery charges in the cheap hours -->
+    <path d="M522,330 C650,330 720,128.1 913.9,128.1" stroke-width="4"/>
+  </g>
+  <g fill="#FDB005">
+    <circle cx="522" cy="330" r="9"/>
+    <circle cx="913.9" cy="128.1" r="11"/>
+  </g>
+  </g>
+</svg>
