@@ -38,6 +38,15 @@ from its editable source, `device-conflict-og.svg`, with
 `rsvg-convert -w 1200 -h 630 device-conflict-og.svg -o device-conflict-og.png`.
 It contains no logo or text.
 
+`problem-fragmented-home.png` is the "The problem" illustration in the
+investor pitch deck. It is the opposite of `hero-connected-home.png`: the car,
+heat pump and home battery each sit in a separate bubble with their own app,
+and the links between them are broken, beside rising bills and emissions. It is
+exported at 1536 by 1024 from its editable source,
+`problem-fragmented-home.svg`, with
+`rsvg-convert -w 1536 -h 1024 problem-fragmented-home.svg -o problem-fragmented-home.png`.
+It contains no logo or text.
+
 ## Brand and distribution assets
 
 - `wiggle-symbol.svg` and `wiggle-symbol-dark.svg` are the current symbol
