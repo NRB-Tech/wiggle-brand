@@ -28,15 +28,16 @@
 
   <!-- car, charger and their own app -->
   <g transform="translate(308,348)">
-    <g transform="translate(-157,-15) scale(0.32)" fill="none" stroke="#0E3659" stroke-width="21.875" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M79.4,262 L42,262 Q15,262 15,236 L15,192 Q15,162 46,152 Q110,130 205,102 C262,52 334,26 440,22 C556,18 646,44 708,82 L736,98 Q752,108 752,130 L752,228 Q752,260 722,262 L690.6,262 A74,74 0 1,0 549.4,262 L220.6,262 A74,74 0 1,0 79.4,262 Z"/>
-      <path d="M234,160 C274,102 354,62 442,58 C548,56 622,86 672,142 L662,160 Z"/>
-      <path d="M450,58 L446,160"/>
-      <path d="M714,124 L746,120"/>
-      <circle cx="150" cy="240" r="38"/>
-      <circle cx="620" cy="240" r="38"/>
+    <g fill="#FFFFFF" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <!-- a compact hatchback, with generous windows and separate wheel arches -->
+      <path d="M-132,63 L-140,63 Q-152,63 -152,51 L-152,38 Q-152,29 -140,26 L-96,15 L-64,-13 Q-53,-23 -36,-24 L-12,-24 Q12,-24 31,-10 L70,18 Q80,25 80,38 L80,54 Q80,63 70,63 L63,63 A24,24 0 1,0 17,63 L-86,63 A24,24 0 1,0 -132,63 Z"/>
+      <path d="M-82,17 L-57,-5 Q-49,-13 -35,-13 L-8,-13 Q10,-12 25,-1 L49,17 Z"/>
+      <path d="M-14,-13 L-14,17" fill="none"/>
+      <circle cx="-109" cy="56" r="15"/>
+      <circle cx="40" cy="56" r="15"/>
+      <path d="M-5,32 L7,32" fill="none" stroke-width="5"/>
+      <path d="M-146,38 L-132,35 M70,32 L78,35" fill="none" stroke-width="5"/>
     </g>
-    <path transform="translate(-157,-15) scale(0.32)" d="M30,182 Q58,166 96,162 Q82,184 40,188 Z" fill="#0E3659"/>
     <g fill="none" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
       <path d="M101.6,77.5 L101.6,-11.0 A18.0,18.0 0 0,1 137.6,-11.0 L137.6,77.5"/>
       <path d="M91.6,77.5 L147.6,77.5"/>

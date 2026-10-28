@@ -49,6 +49,8 @@ exported at 1536 by 1024 from its editable source,
 It contains no logo or text. Its home and phones are copies of the components
 below.
 
+The previous car drawing and its raster export are preserved in `legacy/v3/`.
+
 ## Illustration components
 
 `components/` holds line-art parts to reuse in insight images and other
