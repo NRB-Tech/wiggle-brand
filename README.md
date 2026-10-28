@@ -40,8 +40,9 @@ It contains no logo or text.
 
 `problem-fragmented-home.png` is the "The problem" illustration in the
 investor pitch deck. It is the opposite of `hero-connected-home.png`: the car,
-heat pump and home battery each sit in a separate bubble with their own app,
-and the links between them are broken, beside rising bills and emissions. It is
+heat pump and home battery each sit in a separate bubble with their own app on
+a ring around the home, the links between them are broken, and rising bills and
+emissions sit above the home. It is
 exported at 1536 by 1024 from its editable source,
 `problem-fragmented-home.svg`, with
 `rsvg-convert -w 1536 -h 1024 problem-fragmented-home.svg -o problem-fragmented-home.png`.
