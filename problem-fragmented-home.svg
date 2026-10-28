@@ -29,24 +29,22 @@
   <!-- car, charger and their own app -->
   <g transform="translate(308,348)">
     <g transform="translate(-157,-15) scale(0.32)" fill="none" stroke="#0E3659" stroke-width="21.875" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M83.5,262 L42,262 Q15,262 15,236 L15,192 Q15,162 46,152 Q110,130 205,102 C262,52 334,26 440,22 C556,18 646,44 708,82 L736,98 Q752,108 752,130 L752,228 Q752,260 722,262 L686.5,262 A70,70 0 1,0 553.5,262 L216.5,262 A70,70 0 1,0 83.5,262 Z"/>
-      <path d="M258,134 C292,94 362,68 442,64 C540,62 606,84 648,124 L640,134 Z"/>
-      <path d="M446,64 L442,134"/>
+      <path d="M79.4,262 L42,262 Q15,262 15,236 L15,192 Q15,162 46,152 Q110,130 205,102 C262,52 334,26 440,22 C556,18 646,44 708,82 L736,98 Q752,108 752,130 L752,228 Q752,260 722,262 L690.6,262 A74,74 0 1,0 549.4,262 L220.6,262 A74,74 0 1,0 79.4,262 Z"/>
+      <path d="M234,160 C274,102 354,62 442,58 C548,56 622,86 672,142 L662,160 Z"/>
+      <path d="M450,58 L446,160"/>
       <path d="M714,124 L746,120"/>
-      <circle cx="150" cy="240" r="46"/>
-      <circle cx="150" cy="240" r="20"/>
-      <circle cx="620" cy="240" r="46"/>
-      <circle cx="620" cy="240" r="20"/>
+      <circle cx="150" cy="240" r="38"/>
+      <circle cx="620" cy="240" r="38"/>
     </g>
     <path transform="translate(-157,-15) scale(0.32)" d="M30,182 Q58,166 96,162 Q82,184 40,188 Z" fill="#0E3659"/>
     <g fill="none" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M101.6,79.7 L101.6,-11.0 A18.0,18.0 0 0,1 137.6,-11.0 L137.6,79.7"/>
-      <path d="M91.6,79.7 L147.6,79.7"/>
+      <path d="M101.6,77.5 L101.6,-11.0 A18.0,18.0 0 0,1 137.6,-11.0 L137.6,77.5"/>
+      <path d="M91.6,77.5 L147.6,77.5"/>
       <circle cx="119.6" cy="5.0" r="9"/>
     </g>
-    <path d="M119.6,5.0 C119.6,75.0 81.0,77.0 67.0,33.0" fill="none" stroke="#F6A623" stroke-width="7" stroke-linecap="round"/>
+    <path d="M119.6,5.0 C119.6,75.0 85.5,86.0 71.5,42.0" fill="none" stroke="#F6A623" stroke-width="7" stroke-linecap="round"/>
     <circle cx="119.6" cy="5.0" r="5" fill="#F6A623"/>
-    <circle cx="67.0" cy="33.0" r="6" fill="#F6A623"/>
+    <circle cx="71.5" cy="42.0" r="6" fill="#F6A623"/>
   <g transform="translate(-27.0,-140.0)">
     <rect x="0" y="0" width="54" height="98" rx="12" fill="none" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M19,11 L35,11 M17,87 L37,87" fill="none" stroke="#0E3659" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
