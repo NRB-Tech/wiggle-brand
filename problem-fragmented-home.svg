@@ -28,24 +28,23 @@
 
   <!-- car, charger and their own app -->
   <g transform="translate(308,348)">
-    <g fill="#FFFFFF" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-      <!-- a compact hatchback, with generous windows and separate wheel arches -->
-      <path d="M-132,63 L-140,63 Q-152,63 -152,51 L-152,38 Q-152,29 -140,26 L-96,15 L-64,-13 Q-53,-23 -36,-24 L-12,-24 Q12,-24 31,-10 L70,18 Q80,25 80,38 L80,54 Q80,63 70,63 L63,63 A24,24 0 1,0 17,63 L-86,63 A24,24 0 1,0 -132,63 Z"/>
-      <path d="M-82,17 L-57,-5 Q-49,-13 -35,-13 L-8,-13 Q10,-12 25,-1 L49,17 Z"/>
-      <path d="M-14,-13 L-14,17" fill="none"/>
-      <circle cx="-109" cy="56" r="15"/>
-      <circle cx="40" cy="56" r="15"/>
-      <path d="M-5,32 L7,32" fill="none" stroke-width="5"/>
-      <path d="M-146,38 L-132,35 M70,32 L78,35" fill="none" stroke-width="5"/>
+    <g transform="translate(-163,-40) scale(0.64)" fill="#FFFFFF" stroke="#0E3659" stroke-width="10.9375" stroke-linecap="round" stroke-linejoin="round">
+      <!-- a smooth fastback profile, simplified to its silhouette, windows and wheels -->
+      <path d="M52,148 L34,148 Q17,148 17,131 L17,112 Q17,88 54,79 Q80,73 112,70 C151,40 180,25 228,25 C286,21 324,37 369,60 L385,66 L385,98 Q396,119 385,137 Q379,148 355,148 A36,36 0 1,0 287,148 L120,148 A36,36 0 1,0 52,148 Z"/>
+      <path d="M131,84 Q164,49 202,43 C245,37 287,44 316,60 Q322,64 315,67 C278,83 204,85 131,84 Z" stroke-width="7.8125"/>
+      <path d="M231,42 L228,83" fill="none" stroke-width="7.8125"/>
+      <circle cx="86" cy="136" r="21"/>
+      <circle cx="321" cy="136" r="21"/>
+      <path d="M29,101 Q43,94 57,96 Q48,107 31,108 Z" fill="#0E3659" stroke="none"/>
     </g>
     <g fill="none" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
       <path d="M101.6,77.5 L101.6,-11.0 A18.0,18.0 0 0,1 137.6,-11.0 L137.6,77.5"/>
       <path d="M91.6,77.5 L147.6,77.5"/>
       <circle cx="119.6" cy="5.0" r="9"/>
     </g>
-    <path d="M119.6,5.0 C119.6,75.0 85.5,86.0 71.5,42.0" fill="none" stroke="#F6A623" stroke-width="7" stroke-linecap="round"/>
+    <path d="M119.6,5.0 C119.6,75.0 94,85 79,52 L61,15" fill="none" stroke="#F6A623" stroke-width="7" stroke-linecap="round"/>
     <circle cx="119.6" cy="5.0" r="5" fill="#F6A623"/>
-    <circle cx="71.5" cy="42.0" r="6" fill="#F6A623"/>
+    <circle cx="61" cy="15" r="6" fill="#F6A623"/>
   <g transform="translate(-27.0,-140.0)">
     <rect x="0" y="0" width="54" height="98" rx="12" fill="none" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M19,11 L35,11 M17,87 L37,87" fill="none" stroke="#0E3659" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>

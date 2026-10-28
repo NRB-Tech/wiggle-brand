@@ -49,7 +49,8 @@ exported at 1536 by 1024 from its editable source,
 It contains no logo or text. Its home and phones are copies of the components
 below.
 
-The previous car drawing and its raster export are preserved in `legacy/v3/`.
+Previous car drawings and their raster exports are preserved in `legacy/v3/`
+and `legacy/v4/`. The current car uses a simplified, rounded fastback profile.
 
 ## Illustration components
 
