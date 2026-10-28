@@ -80,7 +80,9 @@ so that the lines keep the weight of the rest of the image.
 - `wiggle-symbol-tile.svg` and `wiggle-symbol-tile.png` are the light symbol on
   a white rounded tile, the logo in Wiggle's emails. Gmail darkens an email's
   page in dark mode but leaves images alone, so the white tile keeps the navy
-  symbol readable there.
+  symbol readable there. Its transparent corners are stored as white, not
+  black: some mail apps scale the image without premultiplying alpha, and
+  black corners then show as dark marks around the rounded tile.
 - `wiggle-horizontal.svg` and `wiggle-horizontal-dark.svg` are the current
   side-by-side lockups. Their symbol is intentionally smaller than the wordmark;
   these supply the landscape social previews rather than the website chrome.
@@ -120,7 +122,8 @@ The current files were rendered with `rsvg-convert` and ImageMagick:
 ```sh
 rsvg-convert --width 1024 --height 1024 --output wiggle-symbol.png wiggle-symbol.svg
 rsvg-convert --width 1024 --height 1024 --output wiggle-symbol-dark.png wiggle-symbol-dark.svg
-rsvg-convert --width 1024 --height 1024 --output wiggle-symbol-tile.png wiggle-symbol-tile.svg
+rsvg-convert --width 1024 --height 1024 wiggle-symbol-tile.svg \
+  | magick - -background white -alpha background -define png:exclude-chunks=date,time wiggle-symbol-tile.png
 
 # Trim the square export to the artwork and keep a 4 px transparent margin.
 rsvg-convert --width 1024 --height 1024 --output /tmp/wiggle-symbol-1024.png wiggle-symbol.svg
