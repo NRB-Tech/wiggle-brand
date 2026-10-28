@@ -51,6 +51,8 @@ below.
 
 Previous car drawings and their raster exports are preserved in `legacy/v3/`
 and `legacy/v4/`. The current car uses a simplified, rounded fastback profile.
+The emissions icon uses a chimney, rising smoke and an upward arrow; the
+previous cloud version is preserved in `legacy/v5/`.
 
 ## Illustration components
 
@@ -100,6 +102,8 @@ so that the lines keep the weight of the rest of the image.
   retained for provenance and is not referenced by the live HTML.
 
 `legacy/v2/` preserves the former white-background, heavier-stroke browser favicons.
+
+`legacy/v5/` preserves the LinkedIn banner with the former tag line, "Energy that moves with you." (replaced by "Home energy, on your terms." on 28 October 2026).
 
 Current assets always use stable, versionless filenames. When a new design is
 approved, move the superseded set into the appropriate `legacy/vN/` directory
