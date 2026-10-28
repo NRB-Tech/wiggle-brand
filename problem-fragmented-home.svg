@@ -28,12 +28,12 @@
 
   <!-- car, charger and their own app -->
   <g transform="translate(308,355)">
-    <g transform="translate(-504,-185) scale(0.5)" fill="none" stroke="#0E3659" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M760,501 L732,501 Q719,500 719,486 L719,440 Q720,420 735,406 L772,374 Q790,361 820,360 L900,355 Q950,354 975,362 L1000,378 Q1025,396 1045,404 L1100,414 Q1135,422 1143,440 L1147,470 Q1148,500 1130,501 L1110,501 A47,47 0 1,0 1018,501 L852,501 A47,47 0 1,0 760,501 Z"/>
-      <path d="M792,400 Q790,392 800,385 L818,372 Q826,368 845,367 L900,364 Q945,362 965,368 L1018,408 Q1022,414 1012,414 L900,410 L800,405 Q792,404 792,400 Z"/>
-      <path d="M900,364 L900,410"/>
-      <circle cx="806" cy="490" r="29"/>
-      <circle cx="1064" cy="490" r="29"/>
+    <g transform="translate(-144,-13) scale(0.9)" fill="none" stroke="#0E3659" stroke-width="7.77778" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M30,80 L14,80 Q4,80 4,70 L4,58 Q4,48 15,45 L58,35 L96,10 Q104,4 116,4 L176,4 Q190,4 200,14 L228,40 Q240,47 240,60 L240,72 Q240,80 232,80 L216,80 A26,26 0 0,0 164,80 L82,80 A26,26 0 0,0 30,80 Z"/>
+      <path d="M72,40 L104,20 L178,20 L204,40 Z"/>
+      <path d="M140,20 L140,40"/>
+      <circle cx="56" cy="80" r="18"/>
+      <circle cx="190" cy="80" r="18"/>
     </g>
     <rect x="82" y="-39" width="40" height="114" rx="10" fill="none" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M68,75 L136,75 M90,45 Q80,53 74,45 Q70,39 68,39" fill="none" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -113,11 +113,11 @@
     <path d="M408,300 L542,300"/>
     <path d="M408,316 L542,316"/>
     <path d="M408,332 L542,332"/>
-    <path d="M-20,348 L660,348"/>
     <path d="M24,304 A22,22 0 0,1 -4,272 A24,24 0 0,1 10,232 A24,24 0 0,1 50,226 A24,24 0 0,1 62,266 A22,22 0 0,1 40,304 Z" fill="#FFFFFF"/>
     <path d="M24,348 L24,304"/>
     <path d="M72,348 Q72,326 92,326 Q100,314 116,320 Q132,320 134,336 Q146,338 146,348" fill="#FFFFFF"/>
     <path d="M590,348 Q590,330 606,330 Q612,316 628,320 Q642,322 644,336 Q652,340 652,348" fill="#FFFFFF"/>
+    <path d="M-20,348 L660,348"/>
   </g>
 
   <!-- rising bills -->
