@@ -46,8 +46,8 @@ emissions sit above the home. It is
 exported at 1536 by 1024 from its editable source,
 `problem-fragmented-home.svg`, with
 `rsvg-convert -w 1536 -h 1024 problem-fragmented-home.svg -o problem-fragmented-home.png`.
-It contains no logo or text. Its home and phones are copies of the components
-below.
+It contains no logo or text. Its home, phones, car and charger are copies of
+the components below.
 
 Previous car drawings and their raster exports are preserved in `legacy/v3/`
 and `legacy/v4/`. The current car uses a simplified, rounded fastback profile.
@@ -76,6 +76,8 @@ so that the lines keep the weight of the rest of the image.
 | --- | --- |
 | `components/house.svg` | Two-storey home with a solar roof, porch, garage, tree and bushes, as in `hero-connected-home.png`. Its ground line is at the bottom of the view box. |
 | `components/phone.svg` | A device's own app on a phone: speaker slot, home bar and a simple blue screen. |
+| `components/car.svg` | Electric car in side view: a fastback silhouette, windows and wheels, as in `problem-fragmented-home.svg`. |
+| `components/car-charging.svg` | The same car plugged into a post charger with an orange cable. Its charger base line is at the bottom of the view box. |
 
 ## Brand and distribution assets
 

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="104" viewBox="4 12 256 104">
+  <title>car</title>
+  <desc>Electric car in side view: a fastback silhouette, windows and wheels. The bottom of the tyres is at y 100.5; 7-unit navy stroke at this size.</desc>
+  <g transform="scale(0.64)" fill="#FFFFFF" stroke="#0E3659" stroke-width="10.9375" stroke-linecap="round" stroke-linejoin="round">
+    <!-- a smooth fastback profile, simplified to its silhouette, windows and wheels -->
+    <path d="M52,148 L34,148 Q17,148 17,131 L17,112 Q17,88 54,79 Q80,73 112,70 C151,40 180,25 228,25 C286,21 324,37 369,60 L385,66 L385,98 Q396,119 385,137 Q379,148 355,148 A36,36 0 1,0 287,148 L120,148 A36,36 0 1,0 52,148 Z"/>
+    <path d="M131,84 Q164,49 202,43 C245,37 287,44 316,60 Q322,64 315,67 C278,83 204,85 131,84 Z" stroke-width="7.8125"/>
+    <path d="M231,42 L228,83" fill="none" stroke-width="7.8125"/>
+    <circle cx="86" cy="136" r="21"/>
+    <circle cx="321" cy="136" r="21"/>
+    <path d="M29,101 Q43,94 57,96 Q48,107 31,108 Z" fill="#0E3659" stroke="none"/>
+  </g>
+</svg>
