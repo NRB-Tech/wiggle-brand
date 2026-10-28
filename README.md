@@ -57,8 +57,9 @@ The chimney and smoke are amber, and both rising arrows share the same arrowhead
 The former navy chimney and arrow treatment are preserved in `legacy/v6/`.
 The version with navy smoke is preserved in `legacy/v7/`.
 Coin stacks use one curved seam between adjacent coins, and the rising arrows
-use the same blue as the app screens. The previous coin and amber-arrow version
-is preserved in `legacy/v8/`.
+use the same navy as the illustration outlines. The previous coin and amber-arrow
+version is preserved in `legacy/v8/`; the bright-blue arrows and previous carbon
+arrow position are preserved in `legacy/v9/`.
 
 ## Illustration components
 

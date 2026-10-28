@@ -147,7 +147,7 @@
     <path d="M688,226 A28,9 0 0,1 744,226 L744,300 A28,9 0 0,1 688,300 Z"/>
     <path d="M688,226 A28,9 0 0,0 744,226 M688,244.5 A28,9 0 0,0 744,244.5 M688,263 A28,9 0 0,0 744,263 M688,281.5 A28,9 0 0,0 744,281.5" fill="none"/>
   </g>
-  <g fill="none" stroke="#2C78FF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+  <g fill="none" stroke="#0E3659" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
     <path d="M606,240 L648,198 L674,220 L748,156"/>
     <use href="#rise-arrowhead" transform="translate(748,156) rotate(49.1446237)"/>
   </g>
@@ -160,8 +160,8 @@
     <path d="M834,224 Q823,224 823,215 Q823,208 831,206 Q831,197 840,197 Q848,195 852,202 Q863,201 865,211 Q867,224 854,224 Z"/>
     <path d="M864,186 Q851,186 851,175 Q845,166 854,160 Q855,149 866,151 Q875,143 884,153 Q897,150 901,162 Q912,166 906,177 Q905,187 892,186 Z"/>
   </g>
-  <g fill="none" stroke="#2C78FF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M944,262 L944,182"/>
-    <use href="#rise-arrowhead" transform="translate(944,182)"/>
+  <g fill="none" stroke="#0E3659" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M932,278 L932,198"/>
+    <use href="#rise-arrowhead" transform="translate(932,198)"/>
   </g>
 </svg>
