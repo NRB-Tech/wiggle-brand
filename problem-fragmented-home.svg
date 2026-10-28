@@ -141,20 +141,13 @@
 
   <!-- rising bills -->
   <g fill="#FFFFFF" stroke="#F6A623" stroke-width="7" stroke-linejoin="round">
-    <path d="M620,300 L620,286 A28,9 0 0,1 676,286 L676,300 A28,9 0 0,1 620,300 Z"/>
-    <path d="M620,286 A28,9 0 0,0 676,286"/>
-    <path d="M620,280 L620,266 A28,9 0 0,1 676,266 L676,280 A28,9 0 0,1 620,280 Z"/>
-    <path d="M620,266 A28,9 0 0,0 676,266"/>
-    <path d="M688,300 L688,286 A28,9 0 0,1 744,286 L744,300 A28,9 0 0,1 688,300 Z"/>
-    <path d="M688,286 A28,9 0 0,0 744,286"/>
-    <path d="M688,280 L688,266 A28,9 0 0,1 744,266 L744,280 A28,9 0 0,1 688,280 Z"/>
-    <path d="M688,266 A28,9 0 0,0 744,266"/>
-    <path d="M688,260 L688,246 A28,9 0 0,1 744,246 L744,260 A28,9 0 0,1 688,260 Z"/>
-    <path d="M688,246 A28,9 0 0,0 744,246"/>
-    <path d="M688,240 L688,226 A28,9 0 0,1 744,226 L744,240 A28,9 0 0,1 688,240 Z"/>
-    <path d="M688,226 A28,9 0 0,0 744,226"/>
+    <!-- Each stack has one outline, a top face and one seam between adjacent coins. -->
+    <path d="M620,266 A28,9 0 0,1 676,266 L676,300 A28,9 0 0,1 620,300 Z"/>
+    <path d="M620,266 A28,9 0 0,0 676,266 M620,283 A28,9 0 0,0 676,283" fill="none"/>
+    <path d="M688,226 A28,9 0 0,1 744,226 L744,300 A28,9 0 0,1 688,300 Z"/>
+    <path d="M688,226 A28,9 0 0,0 744,226 M688,244.5 A28,9 0 0,0 744,244.5 M688,263 A28,9 0 0,0 744,263 M688,281.5 A28,9 0 0,0 744,281.5" fill="none"/>
   </g>
-  <g fill="none" stroke="#F6A623" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+  <g fill="none" stroke="#2C78FF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
     <path d="M606,240 L648,198 L674,220 L748,156"/>
     <use href="#rise-arrowhead" transform="translate(748,156) rotate(49.1446237)"/>
   </g>
@@ -167,7 +160,7 @@
     <path d="M834,224 Q823,224 823,215 Q823,208 831,206 Q831,197 840,197 Q848,195 852,202 Q863,201 865,211 Q867,224 854,224 Z"/>
     <path d="M864,186 Q851,186 851,175 Q845,166 854,160 Q855,149 866,151 Q875,143 884,153 Q897,150 901,162 Q912,166 906,177 Q905,187 892,186 Z"/>
   </g>
-  <g fill="none" stroke="#F6A623" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+  <g fill="none" stroke="#2C78FF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
     <path d="M944,262 L944,182"/>
     <use href="#rise-arrowhead" transform="translate(944,182)"/>
   </g>
