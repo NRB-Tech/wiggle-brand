@@ -53,6 +53,8 @@ Previous car drawings and their raster exports are preserved in `legacy/v3/`
 and `legacy/v4/`. The current car uses a simplified, rounded fastback profile.
 The emissions icon uses a chimney, rising smoke and an upward arrow; the
 previous cloud version is preserved in `legacy/v5/`.
+The chimney is amber, and both rising arrows share the same arrowhead geometry.
+The former navy chimney and arrow treatment are preserved in `legacy/v6/`.
 
 ## Illustration components
 

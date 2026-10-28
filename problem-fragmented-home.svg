@@ -1,4 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024">
+  <defs>
+    <!-- Both rising indicators share 36-unit arrowhead arms and a 90-degree opening. -->
+    <path id="rise-arrowhead" d="M-25.455844,25.455844 L0,0 L25.455844,25.455844"/>
+  </defs>
   <rect width="1536" height="1024" fill="#FFFFFF"/>
 
   <!-- links between the apps, each broken: the devices do not talk to each other -->
@@ -150,16 +154,23 @@
     <path d="M688,240 L688,226 A28,9 0 0,1 744,226 L744,240 A28,9 0 0,1 688,240 Z"/>
     <path d="M688,226 A28,9 0 0,0 744,226"/>
   </g>
-  <path d="M606,240 L648,198 L674,220 L744,156" fill="none" stroke="#F6A623" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M712,156 L748,156 L748,192" fill="none" stroke="#F6A623" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="none" stroke="#F6A623" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M606,240 L648,198 L674,220 L748,156"/>
+    <use href="#rise-arrowhead" transform="translate(748,156) rotate(49.1446237)"/>
+  </g>
 
   <!-- rising carbon emissions: a chimney, two rising smoke puffs and an upward arrow -->
   <g fill="#FFFFFF" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M824,300 L830,243 L854,243 L860,300 Z"/>
-    <path d="M826,234 L858,234 L858,245 L826,245 Z"/>
-    <path d="M812,300 L872,300" fill="none"/>
+    <g stroke="#F6A623">
+      <path d="M824,300 L830,243 L854,243 L860,300 Z"/>
+      <path d="M826,234 L858,234 L858,245 L826,245 Z"/>
+      <path d="M812,300 L872,300" fill="none"/>
+    </g>
     <path d="M834,224 Q823,224 823,215 Q823,208 831,206 Q831,197 840,197 Q848,195 852,202 Q863,201 865,211 Q867,224 854,224 Z"/>
     <path d="M864,186 Q851,186 851,175 Q845,166 854,160 Q855,149 866,151 Q875,143 884,153 Q897,150 901,162 Q912,166 906,177 Q905,187 892,186 Z"/>
   </g>
-  <path d="M932,279 L932,166 M914,184 L932,166 L950,184" fill="none" stroke="#F6A623" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="none" stroke="#F6A623" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M944,246 L944,166"/>
+    <use href="#rise-arrowhead" transform="translate(944,166)"/>
+  </g>
 </svg>
