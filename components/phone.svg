@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="106" viewBox="-4 -4 62 106">
+  <title>phone</title>
+  <desc>A device app on a phone. 7-unit navy stroke at this size.</desc>
+  <rect x="0" y="0" width="54" height="98" rx="12" fill="none" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M19,11 L35,11 M17,87 L37,87" fill="none" stroke="#0E3659" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="27" cy="36" r="10" fill="#2C78FF"/>
+  <path d="M15,60 L39,60 M15,73 L33,73" stroke="#2C78FF" stroke-width="6" stroke-linecap="round"/>
+</svg>

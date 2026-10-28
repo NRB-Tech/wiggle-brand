@@ -10,6 +10,9 @@ artwork. The website consumes this repository as the `brand/` Git submodule.
 - `wiggle-symbol.svg` is the current light-background symbol master;
   `wiggle-symbol-dark.svg` is its dark-background counterpart.
 - Keep source SVGs editable and validate them with `xmllint --noout`.
+- When a new illustration shows an object that `components/` already has, such
+  as the home or a phone, copy that component instead of drawing a new one.
+  If you improve a component, update every illustration that copies it.
 - `wiggle-symbol.png` is a 1024 by 1024 transparent export generated from
   the current light SVG with `rsvg-convert`; regenerate it after master geometry or
   colour changes.

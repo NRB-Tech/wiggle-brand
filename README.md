@@ -46,7 +46,24 @@ emissions sit above the home. It is
 exported at 1536 by 1024 from its editable source,
 `problem-fragmented-home.svg`, with
 `rsvg-convert -w 1536 -h 1024 problem-fragmented-home.svg -o problem-fragmented-home.png`.
-It contains no logo or text.
+It contains no logo or text. Its home and phones are copies of the components
+below.
+
+## Illustration components
+
+`components/` holds line-art parts to reuse in insight images and other
+illustrations, so that the same object looks the same everywhere. Each
+component is a standalone SVG in the light-background palette: navy `#0E3659`
+lines, `#2C78FF` and `#F6A623` accents, and white fills where a part must hide
+lines behind it. Its stroke is 7 units at its native size, which matches a
+1536 by 1024 illustration. To reuse one, copy its contents into a
+`<g transform="translate(x,y)">`; if you scale it, scale the stroke widths back
+so that the lines keep the weight of the rest of the image.
+
+| Component | What it shows |
+| --- | --- |
+| `components/house.svg` | Two-storey home with a solar roof, porch, garage, tree and bushes, as in `hero-connected-home.png`. Its ground line is at the bottom of the view box. |
+| `components/phone.svg` | A device's own app on a phone: speaker slot, home bar and a simple blue screen. |
 
 ## Brand and distribution assets
 

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="584" height="292" viewBox="-24 8 584 292">
+  <title>house</title>
+  <desc>Two-storey home with a solar roof, as in the cover illustration. Ground line at y 292; 7-unit navy stroke at this size.</desc>
+  <g transform="scale(0.84)" fill="none" stroke="#0E3659" stroke-width="8.33333" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M80,132 L160,22 L470,22"/>
+    <path d="M120,112 L168,42 L392,42 L344,112 Z"/>
+    <path d="M152.0,65.3 L376.0,65.3"/>
+    <path d="M136.0,88.7 L360.0,88.7"/>
+    <path d="M212.8,42 L164.8,112"/>
+    <path d="M257.6,42 L209.6,112"/>
+    <path d="M302.4,42 L254.4,112"/>
+    <path d="M347.2,42 L299.2,112"/>
+    <path d="M80,132 L362,132"/>
+    <path d="M362,132 L470,22 L578,132"/>
+    <path d="M384,109.6 L384,226 M558,111.6 L558,226"/>
+    <rect x="436" y="132" width="74" height="58" rx="3"/>
+    <path d="M473,132 L473,190"/>
+    <path d="M98,132 L98,348 M98,236 L265,236"/>
+    <rect x="140" y="160" width="100" height="56" rx="3"/>
+    <path d="M190,160 L190,216"/>
+    <rect x="138" y="256" width="102" height="56" rx="3"/>
+    <path d="M189,256 L189,312"/>
+    <path d="M265,240 L265,226 L572,226 L582,240 Z"/>
+    <path d="M272,240 L272,348 M572,240 L572,348"/>
+    <rect x="304" y="256" width="48" height="80" rx="3"/>
+    <circle cx="316" cy="298" r="3"/>
+    <path d="M292,348 L292,336 L364,336 L364,348"/>
+    <path d="M380,240 L380,348"/>
+    <rect x="408" y="266" width="134" height="82" rx="3"/>
+    <path d="M408,284 L542,284"/>
+    <path d="M408,300 L542,300"/>
+    <path d="M408,316 L542,316"/>
+    <path d="M408,332 L542,332"/>
+    <path d="M24,304 A22,22 0 0,1 -4,272 A24,24 0 0,1 10,232 A24,24 0 0,1 50,226 A24,24 0 0,1 62,266 A22,22 0 0,1 40,304 Z" fill="#FFFFFF"/>
+    <path d="M24,348 L24,304"/>
+    <path d="M72,348 Q72,326 92,326 Q100,314 116,320 Q132,320 134,336 Q146,338 146,348" fill="#FFFFFF"/>
+    <path d="M590,348 Q590,330 606,330 Q612,316 628,320 Q642,322 644,336 Q652,340 652,348" fill="#FFFFFF"/>
+    <path d="M-20,348 L660,348"/>
+  </g>
+</svg>

@@ -2,50 +2,61 @@
   <rect width="1536" height="1024" fill="#FFFFFF"/>
 
   <!-- links between the apps, each broken: the devices do not talk to each other -->
-  <path d="M1123.7,227.5 A490,370 0 0,0 412.3,227.5" fill="none" stroke="#F6A623" stroke-width="7" stroke-linecap="round"/>
-  <path d="M280.4,518.4 A490,370 0 0,0 604.0,830.7" fill="none" stroke="#F6A623" stroke-width="7" stroke-linecap="round"/>
-  <path d="M932.0,830.7 A490,370 0 0,0 1255.6,518.4" fill="none" stroke="#F6A623" stroke-width="7" stroke-linecap="round"/>
+  <path d="M1111.1,211.3 A490,368 0 0,0 424.9,211.3" fill="none" stroke="#F6A623" stroke-width="7" stroke-linecap="round"/>
+  <path d="M283.0,526.5 A490,368 0 0,0 589.6,816.7" fill="none" stroke="#F6A623" stroke-width="7" stroke-linecap="round"/>
+  <path d="M946.4,816.7 A490,368 0 0,0 1253.0,526.5" fill="none" stroke="#F6A623" stroke-width="7" stroke-linecap="round"/>
   <!-- battery and car -->
-  <circle cx="768" cy="112" r="44" fill="#FFFFFF"/>
-  <path d="M750,94 L786,130 M786,94 L750,130" fill="none" stroke="#0E3659" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="768" cy="106" r="44" fill="#FFFFFF"/>
+  <path d="M750,88 L786,124 M786,88 L750,124" fill="none" stroke="#0E3659" stroke-width="9" stroke-linecap="round"/>
   <!-- car and heat pump -->
-  <circle cx="382" cy="710" r="44" fill="#FFFFFF"/>
-  <path d="M364,692 L400,728 M400,692 L364,728" fill="none" stroke="#0E3659" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="384" cy="703" r="44" fill="#FFFFFF"/>
+  <path d="M366,685 L402,721 M402,685 L366,721" fill="none" stroke="#0E3659" stroke-width="9" stroke-linecap="round"/>
   <!-- heat pump and battery -->
-  <circle cx="1154" cy="710" r="44" fill="#FFFFFF"/>
-  <path d="M1136,692 L1172,728 M1172,692 L1136,728" fill="none" stroke="#0E3659" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="1152" cy="703" r="44" fill="#FFFFFF"/>
+  <path d="M1134,685 L1170,721 M1170,685 L1134,721" fill="none" stroke="#0E3659" stroke-width="9" stroke-linecap="round"/>
 
   <!-- each device in its own bubble -->
-  <circle cx="308" cy="355" r="165" fill="#FFFFFF" stroke="#0E3659" stroke-width="7"/>
-  <circle cx="1228" cy="355" r="165" fill="#FFFFFF" stroke="#0E3659" stroke-width="7"/>
-  <circle cx="768" cy="852" r="165" fill="#FFFFFF" stroke="#0E3659" stroke-width="7"/>
-  <circle cx="1124" cy="228" r="11" fill="#FFFFFF" stroke="#F6A623" stroke-width="7"/>
-  <circle cx="412" cy="228" r="11" fill="#FFFFFF" stroke="#F6A623" stroke-width="7"/>
-  <circle cx="280" cy="518" r="11" fill="#FFFFFF" stroke="#F6A623" stroke-width="7"/>
-  <circle cx="604" cy="831" r="11" fill="#FFFFFF" stroke="#F6A623" stroke-width="7"/>
-  <circle cx="932" cy="831" r="11" fill="#FFFFFF" stroke="#F6A623" stroke-width="7"/>
-  <circle cx="1256" cy="518" r="11" fill="#FFFFFF" stroke="#F6A623" stroke-width="7"/>
+  <circle cx="308" cy="348" r="180" fill="#FFFFFF" stroke="#0E3659" stroke-width="7"/>
+  <circle cx="1228" cy="348" r="180" fill="#FFFFFF" stroke="#0E3659" stroke-width="7"/>
+  <circle cx="768" cy="842" r="180" fill="#FFFFFF" stroke="#0E3659" stroke-width="7"/>
+  <circle cx="1111" cy="211" r="11" fill="#FFFFFF" stroke="#F6A623" stroke-width="7"/>
+  <circle cx="425" cy="211" r="11" fill="#FFFFFF" stroke="#F6A623" stroke-width="7"/>
+  <circle cx="283" cy="526" r="11" fill="#FFFFFF" stroke="#F6A623" stroke-width="7"/>
+  <circle cx="590" cy="817" r="11" fill="#FFFFFF" stroke="#F6A623" stroke-width="7"/>
+  <circle cx="946" cy="817" r="11" fill="#FFFFFF" stroke="#F6A623" stroke-width="7"/>
+  <circle cx="1253" cy="526" r="11" fill="#FFFFFF" stroke="#F6A623" stroke-width="7"/>
 
   <!-- car, charger and their own app -->
-  <g transform="translate(308,355)">
-    <g transform="translate(-144,-13) scale(0.9)" fill="none" stroke="#0E3659" stroke-width="7.77778" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M30,80 L14,80 Q4,80 4,70 L4,58 Q4,48 15,45 L58,35 L96,10 Q104,4 116,4 L176,4 Q190,4 200,14 L228,40 Q240,47 240,60 L240,72 Q240,80 232,80 L216,80 A26,26 0 0,0 164,80 L82,80 A26,26 0 0,0 30,80 Z"/>
-      <path d="M72,40 L104,20 L178,20 L204,40 Z"/>
-      <path d="M140,20 L140,40"/>
-      <circle cx="56" cy="80" r="18"/>
-      <circle cx="190" cy="80" r="18"/>
+  <g transform="translate(308,348)">
+    <g transform="translate(-157,-15) scale(0.32)" fill="none" stroke="#0E3659" stroke-width="21.875" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M83.5,262 L42,262 Q15,262 15,236 L15,192 Q15,162 46,152 Q110,130 205,102 C262,52 334,26 440,22 C556,18 646,44 708,82 L736,98 Q752,108 752,130 L752,228 Q752,260 722,262 L686.5,262 A70,70 0 1,0 553.5,262 L216.5,262 A70,70 0 1,0 83.5,262 Z"/>
+      <path d="M258,134 C292,94 362,68 442,64 C540,62 606,84 648,124 L640,134 Z"/>
+      <path d="M446,64 L442,134"/>
+      <path d="M714,124 L746,120"/>
+      <circle cx="150" cy="240" r="46"/>
+      <circle cx="150" cy="240" r="20"/>
+      <circle cx="620" cy="240" r="46"/>
+      <circle cx="620" cy="240" r="20"/>
     </g>
-    <rect x="82" y="-39" width="40" height="114" rx="10" fill="none" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M68,75 L136,75 M90,45 Q80,53 74,45 Q70,39 68,39" fill="none" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M106,-23 L94,1 L105,1 L97,23 L115,-5 L104,-5 L112,-23 Z" fill="#F6A623"/>
-    <rect x="-27" y="-150" width="54" height="98" rx="12" fill="none" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M-8.0,-139 L8.0,-139 M-10.0,-63 L10.0,-63" fill="none" stroke="#0E3659" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="0.0" cy="-114" r="10" fill="#2C78FF"/>
-    <path d="M-12,-90 L12,-90 M-12,-77 L6,-77" stroke="#2C78FF" stroke-width="6" stroke-linecap="round"/>
+    <path transform="translate(-157,-15) scale(0.32)" d="M30,182 Q58,166 96,162 Q82,184 40,188 Z" fill="#0E3659"/>
+    <g fill="none" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M101.6,79.7 L101.6,-11.0 A18.0,18.0 0 0,1 137.6,-11.0 L137.6,79.7"/>
+      <path d="M91.6,79.7 L147.6,79.7"/>
+      <circle cx="119.6" cy="5.0" r="9"/>
+    </g>
+    <path d="M119.6,5.0 C119.6,75.0 81.0,77.0 67.0,33.0" fill="none" stroke="#F6A623" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="119.6" cy="5.0" r="5" fill="#F6A623"/>
+    <circle cx="67.0" cy="33.0" r="6" fill="#F6A623"/>
+  <g transform="translate(-27.0,-140.0)">
+    <rect x="0" y="0" width="54" height="98" rx="12" fill="none" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M19,11 L35,11 M17,87 L37,87" fill="none" stroke="#0E3659" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="27" cy="36" r="10" fill="#2C78FF"/>
+    <path d="M15,60 L39,60 M15,73 L33,73" stroke="#2C78FF" stroke-width="6" stroke-linecap="round"/>
+  </g>
   </g>
 
   <!-- heat pump and its own app -->
-  <g transform="translate(768,852)">
+  <g transform="translate(768,842)">
     <g fill="none" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
       <rect x="-134" y="-64" width="200" height="132" rx="10"/>
       <circle cx="-70" cy="2" r="46"/>
@@ -59,14 +70,16 @@
       <path d="M0,32 L44,32"/>
       <path d="M-114,68 L-114,80 L-90,80 L-90,68 M22,68 L22,80 L46,80 L46,68"/>
     </g>
-    <rect x="82" y="-49" width="54" height="98" rx="12" fill="none" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M101.0,-38 L117.0,-38 M99.0,38 L119.0,38" fill="none" stroke="#0E3659" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="109.0" cy="-13" r="10" fill="#2C78FF"/>
-    <path d="M97,11 L121,11 M97,24 L115,24" stroke="#2C78FF" stroke-width="6" stroke-linecap="round"/>
+  <g transform="translate(82.0,-49.0)">
+    <rect x="0" y="0" width="54" height="98" rx="12" fill="none" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M19,11 L35,11 M17,87 L37,87" fill="none" stroke="#0E3659" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="27" cy="36" r="10" fill="#2C78FF"/>
+    <path d="M15,60 L39,60 M15,73 L33,73" stroke="#2C78FF" stroke-width="6" stroke-linecap="round"/>
+  </g>
   </g>
 
   <!-- home battery and its own app -->
-  <g transform="translate(1228,355)">
+  <g transform="translate(1228,348)">
     <g fill="none" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
       <rect x="-95" y="-97" width="112" height="188" rx="12"/>
       <circle cx="-4" cy="-75" r="8"/>
@@ -76,48 +89,52 @@
     <rect x="-73" y="-13" width="68" height="16" rx="3" fill="#F6A623"/>
     <rect x="-73" y="15" width="68" height="16" rx="3" fill="#F6A623"/>
     <rect x="-73" y="43" width="68" height="16" rx="3" fill="#F6A623"/>
-    <rect x="36" y="-49" width="54" height="98" rx="12" fill="none" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M55.0,-38 L71.0,-38 M53.0,38 L73.0,38" fill="none" stroke="#0E3659" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="63.0" cy="-13" r="10" fill="#2C78FF"/>
-    <path d="M51,11 L75,11 M51,24 L69,24" stroke="#2C78FF" stroke-width="6" stroke-linecap="round"/>
+  <g transform="translate(36.0,-49.0)">
+    <rect x="0" y="0" width="54" height="98" rx="12" fill="none" stroke="#0E3659" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M19,11 L35,11 M17,87 L37,87" fill="none" stroke="#0E3659" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="27" cy="36" r="10" fill="#2C78FF"/>
+    <path d="M15,60 L39,60 M15,73 L33,73" stroke="#2C78FF" stroke-width="6" stroke-linecap="round"/>
+  </g>
   </g>
 
-  <!-- the home in the middle, as in the cover illustration -->
-  <g transform="translate(495.0,319.7) scale(0.84)" fill="none" stroke="#0E3659" stroke-width="8.33333" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M80,132 L160,22 L470,22"/>
-    <path d="M120,112 L168,42 L392,42 L344,112 Z"/>
-    <path d="M152.0,65.3 L376.0,65.3"/>
-    <path d="M136.0,88.7 L360.0,88.7"/>
-    <path d="M212.8,42 L164.8,112"/>
-    <path d="M257.6,42 L209.6,112"/>
-    <path d="M302.4,42 L254.4,112"/>
-    <path d="M347.2,42 L299.2,112"/>
-    <path d="M80,132 L362,132"/>
-    <path d="M362,132 L470,22 L578,132"/>
-    <path d="M384,109.6 L384,226 M558,111.6 L558,226"/>
-    <rect x="436" y="132" width="74" height="58" rx="3"/>
-    <path d="M473,132 L473,190"/>
-    <path d="M98,132 L98,348 M98,236 L265,236"/>
-    <rect x="140" y="160" width="100" height="56" rx="3"/>
-    <path d="M190,160 L190,216"/>
-    <rect x="138" y="256" width="102" height="56" rx="3"/>
-    <path d="M189,256 L189,312"/>
-    <path d="M265,240 L265,226 L572,226 L582,240 Z"/>
-    <path d="M272,240 L272,348 M572,240 L572,348"/>
-    <rect x="304" y="256" width="48" height="80" rx="3"/>
-    <circle cx="316" cy="298" r="3"/>
-    <path d="M292,348 L292,336 L364,336 L364,348"/>
-    <path d="M380,240 L380,348"/>
-    <rect x="408" y="266" width="134" height="82" rx="3"/>
-    <path d="M408,284 L542,284"/>
-    <path d="M408,300 L542,300"/>
-    <path d="M408,316 L542,316"/>
-    <path d="M408,332 L542,332"/>
-    <path d="M24,304 A22,22 0 0,1 -4,272 A24,24 0 0,1 10,232 A24,24 0 0,1 50,226 A24,24 0 0,1 62,266 A22,22 0 0,1 40,304 Z" fill="#FFFFFF"/>
-    <path d="M24,348 L24,304"/>
-    <path d="M72,348 Q72,326 92,326 Q100,314 116,320 Q132,320 134,336 Q146,338 146,348" fill="#FFFFFF"/>
-    <path d="M590,348 Q590,330 606,330 Q612,316 628,320 Q642,322 644,336 Q652,340 652,348" fill="#FFFFFF"/>
-    <path d="M-20,348 L660,348"/>
+  <!-- the home in the middle, as in the cover illustration (components/house.svg) -->
+  <g transform="translate(495.0,319.7)">
+    <g transform="scale(0.84)" fill="none" stroke="#0E3659" stroke-width="8.33333" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M80,132 L160,22 L470,22"/>
+      <path d="M120,112 L168,42 L392,42 L344,112 Z"/>
+      <path d="M152.0,65.3 L376.0,65.3"/>
+      <path d="M136.0,88.7 L360.0,88.7"/>
+      <path d="M212.8,42 L164.8,112"/>
+      <path d="M257.6,42 L209.6,112"/>
+      <path d="M302.4,42 L254.4,112"/>
+      <path d="M347.2,42 L299.2,112"/>
+      <path d="M80,132 L362,132"/>
+      <path d="M362,132 L470,22 L578,132"/>
+      <path d="M384,109.6 L384,226 M558,111.6 L558,226"/>
+      <rect x="436" y="132" width="74" height="58" rx="3"/>
+      <path d="M473,132 L473,190"/>
+      <path d="M98,132 L98,348 M98,236 L265,236"/>
+      <rect x="140" y="160" width="100" height="56" rx="3"/>
+      <path d="M190,160 L190,216"/>
+      <rect x="138" y="256" width="102" height="56" rx="3"/>
+      <path d="M189,256 L189,312"/>
+      <path d="M265,240 L265,226 L572,226 L582,240 Z"/>
+      <path d="M272,240 L272,348 M572,240 L572,348"/>
+      <rect x="304" y="256" width="48" height="80" rx="3"/>
+      <circle cx="316" cy="298" r="3"/>
+      <path d="M292,348 L292,336 L364,336 L364,348"/>
+      <path d="M380,240 L380,348"/>
+      <rect x="408" y="266" width="134" height="82" rx="3"/>
+      <path d="M408,284 L542,284"/>
+      <path d="M408,300 L542,300"/>
+      <path d="M408,316 L542,316"/>
+      <path d="M408,332 L542,332"/>
+      <path d="M24,304 A22,22 0 0,1 -4,272 A24,24 0 0,1 10,232 A24,24 0 0,1 50,226 A24,24 0 0,1 62,266 A22,22 0 0,1 40,304 Z" fill="#FFFFFF"/>
+      <path d="M24,348 L24,304"/>
+      <path d="M72,348 Q72,326 92,326 Q100,314 116,320 Q132,320 134,336 Q146,338 146,348" fill="#FFFFFF"/>
+      <path d="M590,348 Q590,330 606,330 Q612,316 628,320 Q642,322 644,336 Q652,340 652,348" fill="#FFFFFF"/>
+      <path d="M-20,348 L660,348"/>
+    </g>
   </g>
 
   <!-- rising bills -->
