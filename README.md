@@ -116,7 +116,8 @@ so that the lines keep the weight of the rest of the image.
   minimum). They have no text, because the app shows the banner too small to
   read and puts the community name over it. Neither is referenced by the
   website. Use `#102D75` as the community key colour and `#F7F9FD` as the
-  base colour.
+  base colour. For the pinned post colour, use the sun amber, `#F5A623`, and
+  its dark-mode counterpart, `#FFB743`, from `wiggle-symbol-dark.svg`.
 - `legacy/v1/` contains the former symbol and full lockup. Legacy artwork is
   retained for provenance and is not referenced by the live HTML.
 
