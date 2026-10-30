@@ -107,6 +107,16 @@ so that the lines keep the weight of the rest of the image.
   by the website.
 - `linkedin-banner.svg` and `linkedin-banner.png` are not referenced by the
   website, but use the Wiggle wave-and-sun motif.
+- `reddit-banner.svg` and `reddit-banner.png` are the Reddit community banner
+  for desktop, exported at 2144 by 256 (twice Reddit's 1072 by 128 minimum).
+  The tag line sits in the centre between two wave flanks, because Reddit crops
+  the banner's sides in narrow windows and puts the community icon over its
+  lower-left corner. `reddit-banner-mobile.svg` and `reddit-banner-mobile.png`
+  are the mobile banner, exported at 2160 by 256 (twice the 1080 by 128
+  minimum). They have no text, because the app shows the banner too small to
+  read and puts the community name over it. Neither is referenced by the
+  website. Use `#102D75` as the community key colour and `#F7F9FD` as the
+  base colour.
 - `legacy/v1/` contains the former symbol and full lockup. Legacy artwork is
   retained for provenance and is not referenced by the live HTML.
 
@@ -163,6 +173,9 @@ rsvg-convert --width 700 --output /tmp/wiggle-stacked-social.png wiggle-stacked.
 magick -size 1200x630 xc:white /tmp/wiggle-horizontal-social.png -gravity center -composite -depth 8 og-image.png
 magick -size 1200x600 xc:white /tmp/wiggle-horizontal-social.png -gravity center -composite -depth 8 twitter-image.png
 magick -size 1200x1200 xc:white /tmp/wiggle-stacked-social.png -gravity center -composite -depth 8 social-square.png
+
+rsvg-convert -w 2144 -h 256 reddit-banner.svg -o reddit-banner.png
+rsvg-convert -w 2160 -h 256 reddit-banner-mobile.svg -o reddit-banner-mobile.png
 ```
 
 After an update, check the header and ™ alignment at desktop and mobile widths,
