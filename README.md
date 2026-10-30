@@ -118,6 +118,12 @@ so that the lines keep the weight of the rest of the image.
   website. Use `#102D75` as the community key colour and `#F7F9FD` as the
   base colour. For the pinned post colour, use the sun amber, `#F5A623`, and
   its dark-mode counterpart, `#FFB743`, from `wiggle-symbol-dark.svg`.
+- `gravatar-banner.svg` and `gravatar-banner.png` are the Gravatar profile
+  header image, exported at 1920 by 432 (three times the 640 by 144 header
+  that the Gravatar profile page shows). Gravatar puts the avatar over the
+  left 200 units, so the sun sits to its right, and the wave ends at the next
+  crest to leave the right edge clear for the tag line. It is not referenced
+  by the website.
 - `legacy/v1/` contains the former symbol and full lockup. Legacy artwork is
   retained for provenance and is not referenced by the live HTML.
 
@@ -177,6 +183,7 @@ magick -size 1200x1200 xc:white /tmp/wiggle-stacked-social.png -gravity center -
 
 rsvg-convert -w 2144 -h 256 reddit-banner.svg -o reddit-banner.png
 rsvg-convert -w 2160 -h 256 reddit-banner-mobile.svg -o reddit-banner-mobile.png
+rsvg-convert -w 1920 -h 432 gravatar-banner.svg -o gravatar-banner.png
 ```
 
 After an update, check the header and ™ alignment at desktop and mobile widths,
