@@ -135,6 +135,22 @@ Current assets always use stable, versionless filenames. When a new design is
 approved, move the superseded set into the appropriate `legacy/vN/` directory
 before replacing the root-level masters and derivatives.
 
+## Launch animation
+
+`animation/wiggle-logo-animation.html` is the reference for the logo animation
+that the iOS, web and Android apps play right after their launch screen. Open it
+in a browser: it plays the animation, and its sliders change the roll time, how
+far the trough carries the sun, the height of the sun's arc, how much the line
+becomes a sine wave, the flick below the sun and the bounce. The slider defaults
+are the agreed motion.
+
+The animation starts and ends on the symbol at rest. The line rolls to the left
+through one period, the trough carries the sun to the left, the line flicks the
+sun up, and the sun goes over the large peak and lands in the trough with one
+bounce. A period is the symbol and then a smooth trough that joins its right end
+to its left end, so the line has no corner. The apps hold the same arithmetic in
+their own code; change this file first, then the apps.
+
 ## Trade mark
 
 The ™ is deliberately not part of the SVG lockup. Each visible website logo
