@@ -8,20 +8,19 @@ animation. All start at animation time zero.
 - `wiggle-logo-minimal.wav`: quieter air under the roll, a brief brush at
   the flick, one subdued landing and a faint breath under the name and exit.
 
-A third audition, `wiggle-logo-knock.wav`, has no sound for the roll or the
-exit: a gentle pop that goes up for the flick, a soft thump with a warm mallet
-tone for the landing, and six wooden knocks that go up the C major pentatonic
-scale, one for each letter. Regenerate it with
-`python3 animation/sound-design/make-knock-sound.py`.
+Nick chose a third sound on 10 November 2026: a gentle pop for the flick, a
+soft thump for the landing and six wooden knocks that go up a scale, one for
+each letter. It is now the reference sound, `../wiggle-logo-animation.wav`,
+made by `../make-launch-sound.py`, and the apps play it (US-XPLAT-010). The
+two files here stay as auditions.
 
 To hear an audition with the motion, open the reference page with its path:
-`wiggle-logo-animation.html?sound=sound-design/wiggle-logo-knock.wav`.
+`wiggle-logo-animation.html?sound=sound-design/wiggle-logo-playful.wav`.
 
-All files are stereo 48 kHz, 16-bit PCM WAV. The minimal version is
+Both files are stereo 48 kHz, 16-bit PCM WAV. The minimal version is
 deliberately quieter; compare them at the same playback volume. Their timings
 match the reference page's defaults, not arbitrary changes to its sliders.
 
 Regenerate with `python3 animation/sound-design/make-backing-sounds.py`.
 The generator uses the Python standard library and fixed noise seeds; it
-contains no third-party recordings. These are audition assets. The existing
-reference soundtrack and app playback are unchanged.
+contains no third-party recordings. These are audition assets.
