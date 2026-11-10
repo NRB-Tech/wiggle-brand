@@ -137,6 +137,9 @@ before replacing the root-level masters and derivatives.
 
 ## Launch animation
 
+Two backing-sound auditions, playful and minimal, are in
+[`animation/sound-design/`](animation/sound-design/README.md).
+
 `animation/wiggle-logo-animation.html` is the reference for the logo animation
 that the iOS, web and Android apps play right after their launch screen. Open it
 in a browser: it plays the animation. Its playback controls set the time and
