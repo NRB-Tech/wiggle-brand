@@ -262,6 +262,9 @@ function render(t) {
 const FRAME = 1 / 60;
 if (query.has('speed')) control('speed').value = query.get('speed');
 let time = 0, playing = false, last = null, request = null;
+// The sound of make-launch-sound.py. It agrees with the default values of the controls.
+// A browser can refuse sound before the first click on the page, thus ignore that error.
+const sound = new Audio('wiggle-logo-animation.wav');
 
 function show() {
   render(time);
@@ -287,6 +290,7 @@ function stop() {
   if (request !== null) cancelAnimationFrame(request);
   request = null;
   playing = false;
+  sound.pause();
   show();
 }
 function resume() {
@@ -295,6 +299,9 @@ function resume() {
   playing = true;
   last = null;
   show();
+  sound.playbackRate = parseFloat(control('speed').value);
+  sound.currentTime = time;
+  sound.play().catch(() => {});
   request = requestAnimationFrame(frame);
 }
 function play() { configure(); time = 0; resume(); }
@@ -318,7 +325,7 @@ control('replay').addEventListener('click', play);
 control('controls').addEventListener('change', play);
 control('controls').addEventListener('input', configure);
 control('time').addEventListener('input', () => seek(parseFloat(control('time').value)));
-control('speed').addEventListener('input', show);
+control('speed').addEventListener('input', () => { sound.playbackRate = parseFloat(control('speed').value); show(); });
 control('to-start').addEventListener('click', () => seek(0));
 control('back').addEventListener('click', () => seek(time - FRAME));
 control('playback').addEventListener('click', () => (playing ? stop() : resume()));
