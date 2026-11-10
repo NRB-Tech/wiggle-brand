@@ -5,7 +5,7 @@ The sound follows the default motion of wiggle-logo-animation.html:
 
 - a very quiet, low swell while the line rolls;
 - a soft bubble pop when the line flicks the sun up;
-- a lower, rounder pop when the sun lands in the trough;
+- a rounder, quieter pop when the sun lands in the trough;
 - six small bubble pops, one for each letter of the name;
 - a fade while the overlay goes away.
 
@@ -63,13 +63,17 @@ samples = [0.0] * count
 
 
 def add_pop(start, frequency, level, rise=0.8, length=0.045):
-    """A soft bubble pop: a short sine tone. Its pitch goes up while its level goes down."""
+    """A soft bubble pop: a short sine tone. Its pitch goes up while its level goes down.
+
+    The level comes in smoothly in 12 ms, so the pop has no click, and the pitches stay
+    below 900 Hz, so the pop is not bright.
+    """
     first = int(start * RATE)
     phase = 0.0
     for i in range(first, min(count, first + int(length * 6 * RATE))):
         t = (i - first) / RATE
         phase += 2 * math.pi * frequency * (1 + rise * min(1.0, t / length)) / RATE
-        attack = min(1.0, t / 0.006)
+        attack = math.sin(0.5 * math.pi * min(1.0, t / 0.012)) ** 2
         samples[i] += level * attack * math.exp(-t / (length * 0.6)) * math.sin(phase)
 
 
@@ -81,23 +85,24 @@ for i in range(int(TRAVEL_TIME * RATE)):
     samples[i] += 0.07 * swell * math.sin(phase)
 
 # 2. The line flicks the sun up: one bubble pop. The sun makes no sound in the air.
-add_pop(SUN_LAUNCH, 520.0, 0.46, rise=1.0, length=0.05)
+add_pop(SUN_LAUNCH, 400.0, 0.34, rise=0.6, length=0.06)
 
-# 3. The sun lands in the trough: a lower, rounder pop, then a small one for the bounce.
-add_pop(SUN_LAND, 210.0, 0.50, rise=0.5, length=0.09)
-add_pop(BOUNCE_END, 300.0, 0.12, rise=0.5, length=0.05)
+# 3. The sun lands in the trough: a rounder pop, a little quieter than the flick, then a
+# small one for the bounce.
+add_pop(SUN_LAND, 330.0, 0.28, rise=0.4, length=0.07)
+add_pop(BOUNCE_END, 380.0, 0.08, rise=0.4, length=0.05)
 
 # 4. One small pop for each letter, when the letter is almost in its position.
 # The pitches go up and down irregularly, as bubbles do.
-for index, frequency in enumerate([640.0, 820.0, 710.0, 930.0, 780.0, 1010.0]):
-    add_pop(WORD_START + LETTER_STAGGER * index + 0.12, frequency, 0.20, rise=0.9, length=0.035)
+for index, frequency in enumerate([400.0, 480.0, 430.0, 530.0, 460.0, 570.0]):
+    add_pop(WORD_START + LETTER_STAGGER * index + 0.12, frequency, 0.15, rise=0.5, length=0.045)
 
-# 5. The overlay goes away: fade to silence. Then set the peak to -3 dBFS.
+# 5. The overlay goes away: fade to silence. Then set the peak to -6 dBFS.
 for i in range(int(AWAY_START * RATE), count):
     left = 1 - (i / RATE - AWAY_START) / AWAY_TIME
     samples[i] *= max(0.0, left) ** 2
 peak = max(abs(value) for value in samples)
-gain = 10 ** (-3 / 20) / peak
+gain = 10 ** (-6 / 20) / peak
 
 target = Path(__file__).with_name("wiggle-logo-animation.wav")
 with wave.open(str(target), "wb") as out:
