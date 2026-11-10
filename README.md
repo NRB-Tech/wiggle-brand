@@ -139,7 +139,9 @@ before replacing the root-level masters and derivatives.
 
 `animation/wiggle-logo-animation.html` is the reference for the logo animation
 that the iOS, web and Android apps play right after their launch screen. Open it
-in a browser: it plays the animation, and its sliders change the roll time, how
+in a browser: it plays the animation. Its playback controls set the time and
+the speed (0.1x to 2x), play or pause, and step one frame (1/60 s) back or
+forward. Its sliders change the roll time, how
 far the trough carries the sun, the height of the sun's arc, how much the line
 becomes a sine wave, the flick below the sun, when the name starts, the pause
 before the end and the bounce. The slider defaults

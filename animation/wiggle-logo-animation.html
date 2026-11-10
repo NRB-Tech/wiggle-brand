@@ -14,7 +14,10 @@
   svg { width: min(60vmin, 520px); height: auto; overflow: visible; cursor: pointer; margin-bottom: 8vmin; }
   form { display: grid; grid-template-columns: auto minmax(120px, 260px) 3.5em; gap: 6px 12px; align-items: center;
          font: 14px -apple-system, system-ui, sans-serif; color: var(--hint); padding: 0 16px 16px; }
-  form button { grid-column: 1 / -1; justify-self: center; font: inherit; padding: 6px 18px; margin-top: 6px; }
+  form > button { grid-column: 1 / -1; justify-self: center; font: inherit; padding: 6px 18px; margin-top: 6px; }
+  .steps { grid-column: 1 / -1; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
+  .steps button { font: inherit; padding: 6px 12px; }
+  #playback { min-width: 5em; }
   output { font-variant-numeric: tabular-nums; }
   #line { fill: none; stroke: var(--line); stroke-width: 32; stroke-linecap: round; stroke-linejoin: round; }
   #sun { fill: var(--sun); }
@@ -36,6 +39,18 @@
     <path class="letter" d="M853.42,613.96c0,3.08-1.08,5.66-3.23,7.74-2.16,2.08-4.7,3.12-7.62,3.12h-75.08c1.08,8.32,4.66,14.9,10.74,19.75,6.08,4.85,13.51,7.28,22.29,7.28,5.23,0,9.74-.84,13.51-2.54,3.77-1.69,7.81-4.31,12.13-7.85,2.16-1.85,4.58-2.92,7.28-3.23,2.69-.31,5.35.46,7.97,2.31,2.15,1.7,3.27,4.08,3.35,7.16.08,3.08-.89,5.7-2.89,7.85-10.94,11.4-25.1,17.09-42.5,17.09-15.71,0-28.88-5.23-39.5-15.71-10.63-10.47-15.94-24.1-15.94-40.89s5.31-30.3,15.94-40.54c10.63-10.24,23.79-15.36,39.5-15.36s27.95,4.89,38.12,14.67c10.16,9.78,15.48,22.83,15.94,39.15ZM767.48,607.49h62.6c-1.08-8.32-4.43-14.82-10.05-19.52-5.62-4.7-12.51-7.05-20.67-7.05s-15.63,2.39-21.48,7.16c-5.85,4.78-9.32,11.24-10.39,19.4Z"/>
   </g>
 </svg>
+<!-- Playback: these controls change how the page shows the animation, not the motion. -->
+<form id="transport">
+  <label for="time">Time (s)</label><input id="time" type="range" min="0" max="2.9" step="0.01" value="0"><output for="time"></output>
+  <label for="speed">Speed (x)</label><input id="speed" type="range" min="0.1" max="2" step="0.1" value="1"><output for="speed"></output>
+  <div class="steps">
+    <button type="button" id="to-start">Start</button>
+    <button type="button" id="back">&minus;1 frame</button>
+    <button type="button" id="playback">Pause</button>
+    <button type="button" id="forward">+1 frame</button>
+    <button type="button" id="to-end">End</button>
+  </div>
+</form>
 <form id="controls">
   <label for="travel">Roll time (s)</label><input id="travel" type="range" min="1" max="2.5" step="0.05" value="1.5"><output for="travel"></output>
   <label for="ride">Sun ride to the left</label><input id="ride" type="range" min="40" max="300" step="5" value="130"><output for="ride"></output>
@@ -194,7 +209,8 @@ function configure() {
   LAUNCH = sunOnLine(SUN_LAUNCH);
   // The sun keeps its speed to the left when it leaves the trough, then turns back gradually.
   LAUNCH_SPEED = (lineAt(SUN_LAUNCH).shift - lineAt(SUN_LAUNCH - 0.001).shift) / 0.001 * FLIGHT_TIME;
-  for (const out of document.querySelectorAll('output')) out.value = control(out.htmlFor[0]).value;
+  for (const out of document.querySelectorAll('#controls output')) out.value = control(out.htmlFor[0]).value;
+  control('time').max = DURATION.toFixed(2);
 }
 
 function sunAt(t) {
@@ -241,23 +257,59 @@ function render(t) {
   stage.style.transform = `scale(${(1 + 0.06 * eased).toFixed(4)})`;
 }
 
-const fixed = query.get('t');
-let start = null;
-function frame(now) {
-  if (start === null) start = now;
-  const t = (now - start) / 1000;
-  render(Math.min(t, DURATION));
-  if (t < DURATION) requestAnimationFrame(frame);
-  // The page shows the logo and the name at rest again after a moment, so it is not empty.
-  else setTimeout(() => { if (start !== null && performance.now() - start >= DURATION * 1000) render(AWAY_START); }, 700);
+// Playback. `time` is the time in the animation. The speed slider changes how fast
+// `time` moves, and the step buttons move it by one frame of a 60 Hz display.
+const FRAME = 1 / 60;
+if (query.has('speed')) control('speed').value = query.get('speed');
+let time = 0, playing = false, last = null, request = null;
+
+function show() {
+  render(time);
+  control('time').value = time.toFixed(2);
+  document.querySelector('output[for="time"]').value = time.toFixed(2);
+  document.querySelector('output[for="speed"]').value = parseFloat(control('speed').value).toFixed(1);
+  control('playback').textContent = playing ? 'Pause' : 'Play';
 }
-function play() { configure(); start = null; requestAnimationFrame(frame); }
+function frame(now) {
+  if (last !== null) time += (now - last) / 1000 * parseFloat(control('speed').value);
+  last = now;
+  if (time < DURATION) {
+    show();
+    request = requestAnimationFrame(frame);
+    return;
+  }
+  time = DURATION;
+  stop();
+  // The page shows the logo and the name at rest again after a moment, so it is not empty.
+  setTimeout(() => { if (!playing && time === DURATION) render(AWAY_START); }, 700);
+}
+function stop() {
+  if (request !== null) cancelAnimationFrame(request);
+  request = null;
+  playing = false;
+  show();
+}
+function resume() {
+  stop();
+  if (time >= DURATION) time = 0;
+  playing = true;
+  last = null;
+  show();
+  request = requestAnimationFrame(frame);
+}
+function play() { configure(); time = 0; resume(); }
+// Stop and go to a time. The time stays in the animation.
+function seek(t) {
+  time = Math.min(DURATION, Math.max(0, t));
+  stop();
+}
 
 configure();
+const fixed = query.get('t');
 if (fixed !== null) {
-  render(parseFloat(fixed));
+  seek(parseFloat(fixed));
 } else if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  render(DURATION);
+  seek(AWAY_START);
 } else {
   play();
 }
@@ -265,6 +317,13 @@ document.querySelector('svg').addEventListener('click', play);
 control('replay').addEventListener('click', play);
 control('controls').addEventListener('change', play);
 control('controls').addEventListener('input', configure);
+control('time').addEventListener('input', () => seek(parseFloat(control('time').value)));
+control('speed').addEventListener('input', show);
+control('to-start').addEventListener('click', () => seek(0));
+control('back').addEventListener('click', () => seek(time - FRAME));
+control('playback').addEventListener('click', () => (playing ? stop() : resume()));
+control('forward').addEventListener('click', () => seek(time + FRAME));
+control('to-end').addEventListener('click', () => seek(DURATION));
 </script>
 </body>
 </html>
