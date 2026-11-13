@@ -110,11 +110,11 @@ so that the lines keep the weight of the rest of the image.
   LinkedIn company page banner.
 - `linkedin-profile-banner.svg` and `linkedin-profile-banner.png` are the
   banner for Nick's personal LinkedIn profile, exported at 1584 by 396
-  (LinkedIn's personal banner size). LinkedIn puts the profile photo over the
-  lower-left corner, so the sun sits in the trough to its right, and the wave
-  ends at the next crest to leave the right side clear for the tag line, a
-  one-line description and `wiggle.energy`. It is not referenced by the
-  website.
+  (LinkedIn's personal banner size). It holds an exact copy of
+  `wiggle-horizontal.svg`, so update it when the lockup changes. LinkedIn puts
+  the profile photo over the lower-left corner, so the lockup, the tag line
+  and a one-line description with `wiggle.energy` sit on the right. It is not
+  referenced by the website.
 - `reddit-banner.svg` and `reddit-banner.png` are the Reddit community banner
   for desktop, exported at 2144 by 256 (twice Reddit's 1072 by 128 minimum).
   The tag line sits in the centre between two wave flanks, because Reddit crops
