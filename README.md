@@ -105,9 +105,11 @@ so that the lines keep the weight of the rest of the image.
   the two elements have comparable visual weight.
 - `social-square.png` contains the current stacked lockup but is not referenced
   by the website.
-- `linkedin-banner.svg` and `linkedin-banner.png` are not referenced by the
-  website, but use the Wiggle wave-and-sun motif. They are the 1128 by 191
-  LinkedIn company page banner.
+- `linkedin-banner.svg` and `linkedin-banner.png` are the 1128 by 191
+  banner for the Wiggle LinkedIn company page. They are not referenced by the
+  website. They hold an exact copy of `wiggle-horizontal.svg`, with the tag
+  line and a one-line description on the right, because LinkedIn puts the
+  page logo over the lower-left corner. Update them when the lockup changes.
 - `linkedin-profile-banner.svg` and `linkedin-profile-banner.png` are the
   banner for Nick's personal LinkedIn profile, exported at 1584 by 396
   (LinkedIn's personal banner size). It holds an exact copy of
@@ -138,6 +140,8 @@ so that the lines keep the weight of the rest of the image.
 `legacy/v2/` preserves the former white-background, heavier-stroke browser favicons.
 
 `legacy/v5/` preserves the LinkedIn banner with the former tag line, "Energy that moves with you." (replaced by "Home energy, on your terms." on 28 October 2026).
+
+`legacy/v10/` preserves the wave-and-sun LinkedIn company banner. It used a regular wave rather than the logo's symbol, so on 13 November 2026 it was replaced by a banner that holds the horizontal lockup.
 
 Current assets always use stable, versionless filenames. When a new design is
 approved, move the superseded set into the appropriate `legacy/vN/` directory
@@ -216,6 +220,7 @@ magick -size 1200x1200 xc:white /tmp/wiggle-stacked-social.png -gravity center -
 rsvg-convert -w 2144 -h 256 reddit-banner.svg -o reddit-banner.png
 rsvg-convert -w 2160 -h 256 reddit-banner-mobile.svg -o reddit-banner-mobile.png
 rsvg-convert -w 1920 -h 432 gravatar-banner.svg -o gravatar-banner.png
+rsvg-convert -w 1128 -h 191 linkedin-banner.svg -o linkedin-banner.png
 rsvg-convert -w 1584 -h 396 linkedin-profile-banner.svg -o linkedin-profile-banner.png
 ```
 
