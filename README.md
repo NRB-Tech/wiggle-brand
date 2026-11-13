@@ -106,7 +106,15 @@ so that the lines keep the weight of the rest of the image.
 - `social-square.png` contains the current stacked lockup but is not referenced
   by the website.
 - `linkedin-banner.svg` and `linkedin-banner.png` are not referenced by the
-  website, but use the Wiggle wave-and-sun motif.
+  website, but use the Wiggle wave-and-sun motif. They are the 1128 by 191
+  LinkedIn company page banner.
+- `linkedin-profile-banner.svg` and `linkedin-profile-banner.png` are the
+  banner for Nick's personal LinkedIn profile, exported at 1584 by 396
+  (LinkedIn's personal banner size). LinkedIn puts the profile photo over the
+  lower-left corner, so the sun sits in the trough to its right, and the wave
+  ends at the next crest to leave the right side clear for the tag line, a
+  one-line description and `wiggle.energy`. It is not referenced by the
+  website.
 - `reddit-banner.svg` and `reddit-banner.png` are the Reddit community banner
   for desktop, exported at 2144 by 256 (twice Reddit's 1072 by 128 minimum).
   The tag line sits in the centre between two wave flanks, because Reddit crops
@@ -208,6 +216,7 @@ magick -size 1200x1200 xc:white /tmp/wiggle-stacked-social.png -gravity center -
 rsvg-convert -w 2144 -h 256 reddit-banner.svg -o reddit-banner.png
 rsvg-convert -w 2160 -h 256 reddit-banner-mobile.svg -o reddit-banner-mobile.png
 rsvg-convert -w 1920 -h 432 gravatar-banner.svg -o gravatar-banner.png
+rsvg-convert -w 1584 -h 396 linkedin-profile-banner.svg -o linkedin-profile-banner.png
 ```
 
 After an update, check the header and ™ alignment at desktop and mobile widths,
