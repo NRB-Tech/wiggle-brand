@@ -129,21 +129,23 @@ so that the lines keep the weight of the rest of the image.
   referenced by the website.
 - `reddit-banner.svg` and `reddit-banner.png` are the Reddit community banner
   for desktop, exported at 2144 by 256 (twice Reddit's 1072 by 128 minimum).
-  The tag line sits in the centre between two wave flanks, because Reddit crops
-  the banner's sides in narrow windows and puts the community icon over its
+  It holds an exact copy of `wiggle-horizontal.svg`, then a divider, the tag
+  line and a one-line description, all in the centre, because Reddit crops the
+  banner's sides in narrow windows and puts the community icon over its
   lower-left corner. `reddit-banner-mobile.svg` and `reddit-banner-mobile.png`
   are the mobile banner, exported at 2160 by 256 (twice the 1080 by 128
-  minimum). They have no text, because the app shows the banner too small to
-  read and puts the community name over it. Neither is referenced by the
-  website. Use `#102D75` as the community key colour and `#F7F9FD` as the
+  minimum). They hold only an exact copy of `wiggle-symbol.svg` in the centre,
+  with no text, because the app shows the banner too small to read and puts
+  the community name over it. Update both when the lockup or the symbol
+  changes. Neither is referenced by the website. Use `#102D75` as the community key colour and `#F7F9FD` as the
   base colour. For the pinned post colour, use the sun amber, `#F5A623`, and
   its dark-mode counterpart, `#FFB743`, from `wiggle-symbol-dark.svg`.
 - `gravatar-banner.svg` and `gravatar-banner.png` are the Gravatar profile
   header image, exported at 1920 by 432 (three times the 640 by 144 header
   that the Gravatar profile page shows). Gravatar puts the avatar over the
-  left 200 units, so the sun sits to its right, and the wave ends at the next
-  crest to leave the right edge clear for the tag line. It is not referenced
-  by the website.
+  left 200 units, so an exact copy of `wiggle-horizontal.svg`, the tag line
+  and a one-line description sit on the right, as on `linkedin-banner.svg`.
+  Update it when the lockup changes. It is not referenced by the website.
 - `youtube-banner.svg` and `youtube-banner.png` are the banner for the Wiggle
   Energy YouTube channel (@wiggleenergy), exported at 2560 by 1440. YouTube
   shows only the middle 1546 by 423 on every device, so the horizontal lockup
@@ -163,6 +165,11 @@ so that the lines keep the weight of the rest of the image.
 `legacy/v11/` preserves the first YouTube banner, which had the former
 wave-and-sun flanks from `reddit-banner.svg` beside the lockup. Nick asked
 for a banner without the old design on 20 November 2026.
+
+`legacy/v12/` preserves the wave-and-sun Reddit desktop and mobile banners
+and Gravatar header. Like `legacy/v10/`, they used a regular wave rather than
+the logo's symbol, so on 20 November 2026 they were replaced by banners that
+hold the horizontal lockup or the symbol.
 
 Current assets always use stable, versionless filenames. When a new design is
 approved, move the superseded set into the appropriate `legacy/vN/` directory

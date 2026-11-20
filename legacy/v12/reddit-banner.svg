@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2144" height="256" viewBox="0 0 2144 256">
+  <defs>
+    <clipPath id="sun-above-wave">
+      <path d="M-260 52 C-186.71 52 -161.36 192 -45 192 C71.36 192 96.71 52 170 52 C243.29 52 268.64 192 385 192 C501.36 192 526.71 52 600 52 L600 0 L-260 0 Z"/>
+    </clipPath>
+  </defs>
+
+  <rect width="2144" height="256" fill="#F7F9FD"/>
+
+  <g clip-path="url(#sun-above-wave)">
+    <circle cx="385" cy="168.4" r="73" fill="#F5A623"/>
+  </g>
+  <path d="M-260 52 C-186.71 52 -161.36 192 -45 192 C71.36 192 96.71 52 170 52 C243.29 52 268.64 192 385 192 C501.36 192 526.71 52 600 52"
+        fill="none" stroke="#102D75" stroke-linecap="round" stroke-width="24"/>
+  <path d="M1544 52 C1617.29 52 1642.64 192 1759 192 C1875.36 192 1900.71 52 1974 52 C2047.29 52 2072.64 192 2189 192 C2305.36 192 2330.71 52 2404 52"
+        fill="none" stroke="#102D75" stroke-linecap="round" stroke-width="24"/>
+
+  <text x="1072" y="124" fill="#102D75" text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="54" font-weight="700">Home energy, on your terms.</text>
+  <text x="1072" y="174" fill="#40557F" text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="30" font-weight="500">Whole-home energy, quietly coordinated.</text>
+</svg>
