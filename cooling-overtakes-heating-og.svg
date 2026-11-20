@@ -107,6 +107,11 @@
     <circle cx="262" cy="330" r="3.5"/>
     <circle cx="412" cy="118" r="3"/>
   </g>
+  <!-- two small star snowflakes -->
+  <g fill="none" stroke="#7CC0FF" stroke-width="2" stroke-linecap="round" opacity="0.75">
+    <path transform="translate(336,164)" d="M0,-7 L0,7 M-6,-3.5 L6,3.5 M-6,3.5 L6,-3.5"/>
+    <path transform="translate(96,356)" d="M0,-6 L0,6 M-5.2,-3 L5.2,3 M-5.2,3 L5.2,-3"/>
+  </g>
 
   <!-- summer: the sun -->
   <g transform="translate(970,190)">
