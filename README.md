@@ -39,9 +39,10 @@ from its editable source, `device-conflict-og.svg`, with
 It contains no logo or text.
 
 `cooling-overtakes-heating-og.png` is the article-specific preview and figure
-for the cooling insight: a cut-away home with a radiator warmed by a heat pump
-outside, and an air conditioner upstairs blowing cool air, with its outdoor unit
-on the wall; a snowflake and a sun stand for winter and summer. It is exported
+for the cooling insight: a cut-away home with two rooms. On the left, under a
+snowflake and falling snow, a heat pump outside warms a radiator. On the right,
+under the sun, an air conditioner blows cool air, with its outdoor unit on the
+wall. It is exported
 at 1200 by 630 from its editable source, `cooling-overtakes-heating-og.svg`, with
 `rsvg-convert -w 1200 -h 630 cooling-overtakes-heating-og.svg -o cooling-overtakes-heating-og.png`.
 It contains no logo or text. Like the other dark insight previews, it draws its
