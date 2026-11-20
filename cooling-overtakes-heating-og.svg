@@ -8,63 +8,67 @@
     <path d="M80,528 L1120,528"/>
 
     <!-- house: chimney, roof, walls and the wall between the two rooms -->
-    <path d="M430,230 L430,178 L470,178 L470,206 M423,178 L477,178"/>
-    <path d="M330,290 L600,128 L870,290 Z"/>
-    <path d="M360,290 L360,528 M840,290 L840,528"/>
-    <path d="M600,290 L600,528"/>
+    <path d="M450,212 L450,158 L484,158 L484,188 M444,158 L490,158"/>
+    <path d="M370,270 L600,104 L830,270 Z"/>
+    <path d="M400,270 L400,528 M800,270 L800,528"/>
+    <path d="M600,270 L600,528"/>
 
     <!-- loft window -->
-    <circle cx="600" cy="226" r="23"/>
-    <path d="M600,203 L600,249 M577,226 L623,226" stroke-width="3"/>
+    <circle cx="600" cy="206" r="22"/>
+    <path d="M600,184 L600,228 M578,206 L622,206" stroke-width="3"/>
 
     <!-- winter room: window and radiator -->
-    <rect x="445" y="318" width="80" height="62" rx="3"/>
-    <path d="M485,318 L485,380 M445,349 L525,349" stroke-width="3"/>
-    <rect x="408" y="440" width="154" height="58" rx="6"/>
-    <path d="M430,447 L430,491 M452,447 L452,491 M474,447 L474,491 M496,447 L496,491 M518,447 L518,491 M540,447 L540,491" stroke-width="3"/>
-    <path d="M424,498 L424,528 M546,498 L546,528"/>
+    <rect x="465" y="296" width="70" height="76" rx="3"/>
+    <path d="M500,296 L500,372 M465,334 L535,334" stroke-width="3"/>
+    <rect x="444" y="440" width="112" height="62" rx="6"/>
+    <path d="M460,447 L460,495 M476,447 L476,495 M492,447 L492,495 M508,447 L508,495 M524,447 L524,495 M540,447 L540,495" stroke-width="3"/>
+    <path d="M458,502 L458,528 M542,502 L542,528"/>
 
     <!-- heat pump outside the winter room -->
+    <g transform="translate(40,0)">
     <rect x="170" y="430" width="160" height="90" rx="10"/>
     <circle cx="218" cy="475" r="30"/>
     <circle cx="218" cy="475" r="5" stroke-width="3"/>
     <path d="M218,470 Q207,459 216,448 M223,475 Q234,464 245,473 M218,480 Q229,491 220,502 M213,475 Q202,486 191,477" stroke-width="3"/>
     <path d="M264,459 L306,459 M264,475 L306,475 M264,491 L306,491"/>
     <path d="M186,520 L186,528 M314,520 L314,528"/>
+    </g>
 
     <!-- summer room: air conditioner on the wall and a sofa -->
-    <rect x="640" y="316" width="160" height="46" rx="13"/>
-    <path d="M658,349 L782,349" stroke-width="3"/>
-    <path d="M650,516 L650,482 Q650,470 663,470 Q676,470 676,482 L676,494 L764,494 L764,482 Q764,470 777,470 Q790,470 790,482 L790,516 Z"/>
-    <path d="M676,478 L676,462 Q676,452 686,452 L754,452 Q764,452 764,462 L764,478"/>
-    <path d="M660,516 L660,528 M780,516 L780,528"/>
+    <rect x="634" y="302" width="132" height="44" rx="13"/>
+    <path d="M650,334 L750,334" stroke-width="3"/>
+    <path d="M640,516 L640,478 Q640,466 652,466 Q664,466 664,478 L664,490 L736,490 L736,478 Q736,466 748,466 Q760,466 760,478 L760,516 Z"/>
+    <path d="M664,474 L664,452 Q664,440 676,440 L724,440 Q736,440 736,452 L736,474"/>
+    <path d="M650,516 L650,528 M750,516 L750,528"/>
 
     <!-- its outdoor unit on a wall bracket -->
+    <g transform="translate(-40,0)">
     <rect x="862" y="382" width="118" height="70" rx="8"/>
     <circle cx="897" cy="417" r="22" stroke-width="3"/>
     <circle cx="897" cy="417" r="4" stroke-width="2.5"/>
     <path d="M931,404 L964,404 M931,417 L964,417 M931,430 L964,430"/>
     <path d="M840,456 L972,456 M840,498 L904,456"/>
+    </g>
   </g>
 
   <!-- heat from the heat pump to the radiator, and warmth rising from it -->
   <g fill="none" stroke="#FDB005" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M330,484 L408,484"/>
-    <path d="M451,428 Q441,418 451,408 Q461,398 451,392"/>
-    <path d="M485,428 Q475,418 485,408 Q495,398 485,392"/>
-    <path d="M519,428 Q509,418 519,408 Q529,398 519,392"/>
+    <path d="M370,484 L444,484"/>
+    <path d="M472,428 Q462,418 472,408 Q482,398 472,392"/>
+    <path d="M500,428 Q490,418 500,408 Q510,398 500,392"/>
+    <path d="M528,428 Q518,418 528,408 Q538,398 528,392"/>
   </g>
 
   <!-- the pipe to the outdoor unit, and cool air from the air conditioner -->
   <g fill="none" stroke="#7CC0FF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M800,339 L872,339 Q884,339 884,351 L884,382"/>
-    <path d="M672,376 Q662,389 672,402 Q682,415 672,428"/>
-    <path d="M720,376 Q710,389 720,402 Q730,415 720,428"/>
-    <path d="M768,376 Q758,389 768,402 Q778,415 768,428"/>
+    <path d="M766,324 L832,324 Q844,324 844,336 L844,382"/>
+    <path d="M662,360 Q652,373 662,386 Q672,399 662,412"/>
+    <path d="M700,360 Q690,373 700,386 Q710,399 700,412"/>
+    <path d="M738,360 Q728,373 738,386 Q748,399 738,412"/>
   </g>
 
   <!-- winter: a snowflake and falling snow -->
-  <g transform="translate(210,190)" fill="none" stroke="#7CC0FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+  <g transform="translate(230,190)" fill="none" stroke="#7CC0FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
     <path d="M0,-52 L0,52"/>
     <path d="M-45,-26 L45,26"/>
     <path d="M-45,26 L45,-26"/>
@@ -79,11 +83,11 @@
     <circle cx="330" cy="236" r="4"/>
     <circle cx="150" cy="352" r="3"/>
     <circle cx="262" cy="330" r="3.5"/>
-    <circle cx="400" cy="130" r="3"/>
+    <circle cx="412" cy="118" r="3"/>
   </g>
 
   <!-- summer: the sun -->
-  <g transform="translate(990,190)">
+  <g transform="translate(970,190)">
     <circle r="40" fill="#FDB005"/>
     <g fill="none" stroke="#FDB005" stroke-width="5" stroke-linecap="round">
       <path d="M0,-58 L0,-76 M0,58 L0,76 M-58,0 L-76,0 M58,0 L76,0"/>
