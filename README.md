@@ -38,6 +38,15 @@ from its editable source, `device-conflict-og.svg`, with
 `rsvg-convert -w 1200 -h 630 device-conflict-og.svg -o device-conflict-og.png`.
 It contains no logo or text.
 
+`cooling-overtakes-heating-og.png` is the article-specific preview and figure
+for the cooling insight: a cut-away home with a radiator warmed by a heat pump
+outside, and an air conditioner upstairs blowing cool air, with its outdoor unit
+on the wall; a snowflake and a sun stand for winter and summer. It is exported
+at 1200 by 630 from its editable source, `cooling-overtakes-heating-og.svg`, with
+`rsvg-convert -w 1200 -h 630 cooling-overtakes-heating-og.svg -o cooling-overtakes-heating-og.png`.
+It contains no logo or text. Like the other dark insight previews, it draws its
+own white-line home rather than the light-palette `components/house.svg`.
+
 `problem-fragmented-home.png` is the "The problem" illustration in the
 investor pitch deck. It is the opposite of `hero-connected-home.png`: the car,
 heat pump and home battery each sit in a separate bubble with their own app on

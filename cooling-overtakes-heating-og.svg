@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <title>A home with a radiator heat pump and a room air conditioner</title>
+  <desc>Cut-away two-storey home. Downstairs, a radiator warmed by a heat pump outside; upstairs, a wall-mounted air conditioner blowing cool air, with its outdoor unit on the wall. A snowflake and a sun stand for winter and summer. Navy, white, amber and cool blue; no logo or text.</desc>
+  <rect width="1200" height="630" fill="#01204C"/>
+
+  <g fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- ground -->
+    <path d="M80,528 L1120,528"/>
+
+    <!-- house: roof, walls and the floor between the storeys -->
+    <path d="M272,240 L530,92 L788,240 Z"/>
+    <path d="M300,240 L300,528 M760,240 L760,528"/>
+    <path d="M300,384 L760,384"/>
+
+    <!-- upstairs window -->
+    <rect x="336" y="276" width="74" height="74" rx="3"/>
+    <path d="M373,276 L373,350 M336,313 L410,313"/>
+
+    <!-- downstairs door and window -->
+    <path d="M332,528 L332,424 L392,424 L392,528"/>
+    <circle cx="380" cy="478" r="3"/>
+    <rect x="666" y="420" width="62" height="62" rx="3"/>
+    <path d="M697,420 L697,482 M666,451 L728,451"/>
+
+    <!-- air conditioner on the upstairs wall -->
+    <rect x="474" y="262" width="184" height="50" rx="14"/>
+    <path d="M494,298 L638,298" stroke-width="3"/>
+
+    <!-- its outdoor unit on a wall bracket, and the pipe through the wall -->
+    <path d="M658,282 L776,282 L776,300"/>
+    <rect x="782" y="300" width="118" height="70" rx="8"/>
+    <circle cx="817" cy="335" r="22" stroke-width="3"/>
+    <circle cx="817" cy="335" r="4" stroke-width="2.5"/>
+    <path d="M851,322 L884,322 M851,335 L884,335 M851,348 L884,348"/>
+    <path d="M760,374 L884,374 M760,412 L826,374"/>
+
+    <!-- radiator -->
+    <rect x="430" y="440" width="196" height="62" rx="6"/>
+    <path d="M454,446 L454,496 M478,446 L478,496 M502,446 L502,496 M526,446 L526,496 M550,446 L550,496 M574,446 L574,496 M598,446 L598,496"/>
+    <path d="M446,502 L446,528 M610,502 L610,528"/>
+
+    <!-- heat pump outside, piped to the radiator -->
+    <path d="M626,490 L800,490"/>
+    <rect x="800" y="430" width="160" height="90" rx="10"/>
+    <circle cx="848" cy="475" r="30"/>
+    <circle cx="848" cy="475" r="5" stroke-width="3"/>
+    <path d="M848,470 Q837,459 846,448 M853,475 Q864,464 875,473 M848,480 Q859,491 850,502 M843,475 Q832,486 821,477" stroke-width="3"/>
+    <path d="M894,459 L936,459 M894,475 L936,475 M894,491 L936,491"/>
+    <path d="M816,520 L816,528 M944,520 L944,528"/>
+  </g>
+
+  <!-- warmth rising from the radiator -->
+  <g fill="none" stroke="#FDB005" stroke-width="4" stroke-linecap="round">
+    <path d="M482,428 Q472,418 482,408 Q492,398 482,392"/>
+    <path d="M528,428 Q518,418 528,408 Q538,398 528,392"/>
+    <path d="M574,428 Q564,418 574,408 Q584,398 574,392"/>
+  </g>
+
+  <!-- cool air from the air conditioner -->
+  <g fill="none" stroke="#7CC0FF" stroke-width="4" stroke-linecap="round">
+    <path d="M500,326 Q490,340 500,354 Q510,368 500,376"/>
+    <path d="M566,326 Q556,340 566,354 Q576,368 566,376"/>
+    <path d="M632,326 Q622,340 632,354 Q642,368 632,376"/>
+  </g>
+
+  <!-- winter: a snowflake -->
+  <g transform="translate(160,170)" fill="none" stroke="#7CC0FF" stroke-width="5" stroke-linecap="round">
+    <path d="M0,-52 L0,52"/>
+    <path d="M-45,-26 L45,26"/>
+    <path d="M-45,26 L45,-26"/>
+    <path d="M-12,-40 L0,-28 L12,-40 M-12,40 L0,28 L12,40"/>
+    <path d="M-40,-8 L-24,-14 L-28,-30 M40,8 L24,14 L28,30"/>
+    <path d="M-40,8 L-24,14 L-28,30 M40,-8 L24,-14 L28,-30"/>
+  </g>
+
+  <!-- summer: the sun -->
+  <g transform="translate(1040,170)">
+    <circle r="40" fill="#FDB005"/>
+    <g fill="none" stroke="#FDB005" stroke-width="5" stroke-linecap="round">
+      <path d="M0,-58 L0,-76 M0,58 L0,76 M-58,0 L-76,0 M58,0 L76,0"/>
+      <path d="M41,-41 L54,-54 M-41,41 L-54,54 M41,41 L54,54 M-41,-41 L-54,-54"/>
+    </g>
+  </g>
+</svg>
