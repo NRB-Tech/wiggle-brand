@@ -144,6 +144,13 @@ so that the lines keep the weight of the rest of the image.
   left 200 units, so the sun sits to its right, and the wave ends at the next
   crest to leave the right edge clear for the tag line. It is not referenced
   by the website.
+- `youtube-banner.svg` and `youtube-banner.png` are the banner for the Wiggle
+  Energy YouTube channel (@wiggleenergy), exported at 2560 by 1440. YouTube
+  shows only the middle 1546 by 423 on every device, so the horizontal lockup
+  (an exact copy of `wiggle-horizontal.svg`), the tag line and one line with
+  `wiggle.energy` sit there; the wave flanks and sun from `reddit-banner.svg`
+  show only on wide screens and TVs. The channel picture is
+  `wiggle-symbol.png` on white. Neither is referenced by the website.
 - `legacy/v1/` contains the former symbol and full lockup. Legacy artwork is
   retained for provenance and is not referenced by the live HTML.
 
