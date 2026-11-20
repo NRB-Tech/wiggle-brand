@@ -1,7 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <title>A home with a radiator heat pump on its winter side and an air conditioner on its summer side</title>
   <desc>Cut-away home with two rooms. On the left, under a snowflake and falling snow, a heat pump outside warms a radiator. On the right, under the sun, a wall-mounted air conditioner blows cool air over a sofa, with its outdoor unit on the wall. Navy, white, amber and cool blue; no logo or text.</desc>
+  <defs>
+    <!-- soft sky glows behind the snowflake and the sun -->
+    <radialGradient id="winter-sky-glow" cx="230" cy="190" r="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7CC0FF" stop-opacity="0.18"/>
+      <stop offset="52%" stop-color="#7CC0FF" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#7CC0FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="summer-sky-glow" cx="970" cy="190" r="285" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDB005" stop-opacity="0.26"/>
+      <stop offset="42%" stop-color="#FF9E1B" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#FDB005" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sun-halo" cx="970" cy="190" r="96" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDB005" stop-opacity="0.38"/>
+      <stop offset="55%" stop-color="#FDB005" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#FDB005" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
   <rect width="1200" height="630" fill="#01204C"/>
+  <circle cx="230" cy="190" r="260" fill="url(#winter-sky-glow)"/>
+  <circle cx="970" cy="190" r="285" fill="url(#summer-sky-glow)"/>
+  <circle cx="970" cy="190" r="96" fill="url(#sun-halo)"/>
 
   <g fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
     <!-- ground -->
@@ -88,10 +110,24 @@
 
   <!-- summer: the sun -->
   <g transform="translate(970,190)">
-    <circle r="40" fill="#FDB005"/>
-    <g fill="none" stroke="#FDB005" stroke-width="5" stroke-linecap="round">
-      <path d="M0,-58 L0,-76 M0,58 L0,76 M-58,0 L-76,0 M58,0 L76,0"/>
-      <path d="M41,-41 L54,-54 M-41,41 L-54,54 M41,41 L54,54 M-41,-41 L-54,-54"/>
+    <circle r="39" fill="#FDB005"/>
+    <!-- six long rays -->
+    <g stroke="#FDB005" stroke-width="4.75" stroke-linecap="round">
+      <path d="M0,-52 L0,-74"/>
+      <path d="M0,-52 L0,-74" transform="rotate(60)"/>
+      <path d="M0,-52 L0,-74" transform="rotate(120)"/>
+      <path d="M0,-52 L0,-74" transform="rotate(180)"/>
+      <path d="M0,-52 L0,-74" transform="rotate(240)"/>
+      <path d="M0,-52 L0,-74" transform="rotate(300)"/>
+    </g>
+    <!-- six short rays between them -->
+    <g stroke="#FDB005" stroke-width="3.5" stroke-linecap="round" opacity="0.82">
+      <path d="M0,-52 L0,-64" transform="rotate(30)"/>
+      <path d="M0,-52 L0,-64" transform="rotate(90)"/>
+      <path d="M0,-52 L0,-64" transform="rotate(150)"/>
+      <path d="M0,-52 L0,-64" transform="rotate(210)"/>
+      <path d="M0,-52 L0,-64" transform="rotate(270)"/>
+      <path d="M0,-52 L0,-64" transform="rotate(330)"/>
     </g>
   </g>
 </svg>
