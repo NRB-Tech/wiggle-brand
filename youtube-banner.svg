@@ -1,27 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="2560" height="1440" viewBox="0 0 2560 1440">
-  <!-- Banner for the Wiggle YouTube channel (2560 by 1440). YouTube shows
-       only the middle 1546 by 423 (x 507-2053, y 508-931) on every device,
-       so the lockup and text sit there; the wave flanks from
-       reddit-banner.svg show only on wide screens and TVs. The logo is an
-       exact copy of wiggle-horizontal.svg; keep it in step with that file. -->
-  <defs>
-    <clipPath id="sun-above-wave">
-      <path d="M-260 52 C-186.71 52 -161.36 192 -45 192 C71.36 192 96.71 52 170 52 C243.29 52 268.64 192 385 192 C501.36 192 526.71 52 600 52 L600 0 L-260 0 Z"/>
-    </clipPath>
-  </defs>
-
+  <!-- Banner for the Wiggle Energy YouTube channel (2560 by 1440). YouTube
+       shows only the middle 1546 by 423 (x 507-2053, y 508-931) on every
+       device, so the lockup and text sit there, as on linkedin-banner.svg.
+       It has no wave-and-sun flanks: that is the former design
+       (legacy/v10/, legacy/v11/). The logo is an exact copy of
+       wiggle-horizontal.svg; keep it in step with that file. -->
   <rect width="2560" height="1440" fill="#F7F9FD"/>
-
-  <g transform="translate(-430 537) scale(1.5)">
-    <g clip-path="url(#sun-above-wave)">
-      <circle cx="385" cy="168.4" r="73" fill="#F5A623"/>
-    </g>
-    <path d="M-260 52 C-186.71 52 -161.36 192 -45 192 C71.36 192 96.71 52 170 52 C243.29 52 268.64 192 385 192 C501.36 192 526.71 52 600 52" fill="none" stroke="#102D75" stroke-linecap="round" stroke-width="24"/>
-  </g>
-  <g transform="translate(-226 537) scale(1.5)">
-    <path d="M1544 52 C1617.29 52 1642.64 192 1759 192 C1875.36 192 1900.71 52 1974 52 C2047.29 52 2072.64 192 2189 192 C2305.36 192 2330.71 52 2404 52" fill="none" stroke="#102D75" stroke-linecap="round" stroke-width="24"/>
-  </g>
 
   <svg x="900" y="548" width="760" height="174" viewBox="50 20 1180 270">
   <defs>

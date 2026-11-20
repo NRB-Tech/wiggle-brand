@@ -148,8 +148,8 @@ so that the lines keep the weight of the rest of the image.
   Energy YouTube channel (@wiggleenergy), exported at 2560 by 1440. YouTube
   shows only the middle 1546 by 423 on every device, so the horizontal lockup
   (an exact copy of `wiggle-horizontal.svg`), the tag line and one line with
-  `wiggle.energy` sit there; the wave flanks and sun from `reddit-banner.svg`
-  show only on wide screens and TVs. The channel picture is
+  `wiggle.energy` sit there, as on `linkedin-banner.svg`, with no
+  wave-and-sun flanks. The channel picture is
   `wiggle-symbol.png` on white. Neither is referenced by the website.
 - `legacy/v1/` contains the former symbol and full lockup. Legacy artwork is
   retained for provenance and is not referenced by the live HTML.
@@ -159,6 +159,10 @@ so that the lines keep the weight of the rest of the image.
 `legacy/v5/` preserves the LinkedIn banner with the former tag line, "Energy that moves with you." (replaced by "Home energy, on your terms." on 28 October 2026).
 
 `legacy/v10/` preserves the wave-and-sun LinkedIn company banner. It used a regular wave rather than the logo's symbol, so on 13 November 2026 it was replaced by a banner that holds the horizontal lockup.
+
+`legacy/v11/` preserves the first YouTube banner, which had the former
+wave-and-sun flanks from `reddit-banner.svg` beside the lockup. Nick asked
+for a banner without the old design on 20 November 2026.
 
 Current assets always use stable, versionless filenames. When a new design is
 approved, move the superseded set into the appropriate `legacy/vN/` directory
