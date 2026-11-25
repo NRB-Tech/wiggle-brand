@@ -48,6 +48,20 @@ at 1200 by 630 from its editable source, `cooling-overtakes-heating-og.svg`, wit
 It contains no logo or text. Like the other dark insight previews, it draws its
 own white-line home rather than the light-palette `components/house.svg`.
 
+`price-cap-rise-og.png` is the article-specific preview and figure for the
+price cap insight. From one start point, a white line climbs in three steps to
+a gas bill with a flame on it. The step heights are in proportion to the rises
+of July, October and January, and the last step has the label "+26%". An amber
+wave falls from the same start to an electric home with a heat pump, a battery
+and a car on charge, and a ring marks each low point of the wave, the cheap
+hours. It is exported at 1200 by 630 from its editable source,
+`price-cap-rise-og.svg`, with
+`rsvg-convert -w 1200 -h 630 price-cap-rise-og.svg -o price-cap-rise-og.png`.
+It contains no logo. The label is live text in Helvetica Neue, so export it on
+a Mac. Amber is only on the electric side: the flame is a white outline. Its
+home is the white-line home of `warm-homes-timing-og.svg`, mirrored and without
+the solar panels, and its car is a white-line copy of `components/car.svg`.
+
 `problem-fragmented-home.png` is the "The problem" illustration in the
 investor pitch deck. It is the opposite of `hero-connected-home.png`: the car,
 heat pump and home battery each sit in a separate bubble with their own app on
